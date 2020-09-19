@@ -27,7 +27,7 @@
 
 ![](https://images.serverlessfans.com/s-tool/zh/s-search-test-alibaba.jpg)
 
-当然，如果我们想要搜索其他的内容，例如插件或者组件等，我们可以增加对应的参数`-t`，例如我们要搜索阿里巴巴的`test`相关的组件（关于应用、组件和插件的概念可以查看[相关文档](../others/Package概念区分.md)）：`s search test -p alibaba -t component`，结果是：
+当然，如果我们想要搜索其他的内容，例如插件或者组件等，我们可以增加对应的参数`-t`，例如我们要搜索阿里巴巴的`test`相关的组件（关于应用、组件和插件的概念可以查看[相关文档](https://github.com/ServerlessTool/docs/blob/master/%E5%B7%A5%E5%85%B7%E6%96%87%E6%A1%A3/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/Package%E6%A6%82%E5%BF%B5%E5%8C%BA%E5%88%86.md)）：`s search test -p alibaba -t component`，结果是：
 
 ![](https://images.serverlessfans.com/s-tool/zh/s-search-test-alibaba-component.jpg)
 
