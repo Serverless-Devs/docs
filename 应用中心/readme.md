@@ -11,6 +11,9 @@
 - [阿里云 Nextjs](./component/阿里云%20Nextjs.md)
 - [阿里云 Nuxtjs](./component/阿里云%20Nuxtjs.md)
 - [阿里云 Tornado](./component/阿里云%20Tornado.md)
+- [阿里云 Bottle](./component/阿里云%20Bottle.md)
+- [阿里云 Flask](./component/阿里云%20Flask.md)
+- [阿里云 Web.py](./component/阿里云%20Web.py.md)
 
 
 ### 腾讯云
