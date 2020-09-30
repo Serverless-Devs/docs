@@ -46,6 +46,71 @@ Category: 分类 # 基础云服务/Web框架/Web应用/人工智能/音视频处
 
 这个文件是项目的简介，您可以通过这部分，为您的项目写一份完整的描述文档，这样大家在使用您的项目的时候，才可以更加简单，轻松快速的用的起来。
 
+## 项目开发
+
+本例子仅是一个开发样例，尽可能的为您描述清楚每个开发细节。如果有任何问题可以随时和我取得联系（Wechat：anycodes_02）
+
+### 创建项目
+
+在控制台执行：`s platform init -t plugin`，即可创建一个Component模板：
+
+```
+$ s platform init -t plugin
+
+Initializing......
+Initialization successfully
+$ ls  
+src    publish.yaml	    readme.md
+```
+
+此时，我们创建一个目录`src`, 并且在`src`目录下创建`index.js`， 当然，如果项目本身已经存在了，可以跳过这一步骤：：
+
+```
+$ mkdir src && cd src && touch index.js
+$ ls
+index.js
+
+```
+> 这里要额外说明，大家在发布自己的`plugin`的时候（即执行`s platform publish`的时候），系统会打包`src`目录下的所有文件，并且上传到服务端。所以这个目录下请勿放敏感信息和数据。
+> 在用户使用您开发的组件的时候，会默认寻找`index.js`文件，所以，这个文件是必须存在的。
+
+### 开发组件
+
+本组件仅供测试，希望您可以通过这个组件开发过程，可以有所收获。
+
+首先要明确的是，我们的`index.js`基本样子：
+
+```javascript
+
+export function plugin(inputs) {
+  // 输入的参数信息
+  console.log(JSON.stringify(inputs));
+  
+  // 返回对应的结果
+  // 此处的返回的内容，将会作为组件的入参，或者是整体的返回结果，所以要认真对待
+  return inputs;
+}
+```
+
+此时，当用户使用该插件的时候，启动器将会将用户写的参数作为inputs传给您，您只需要按照需求处理之后，返回即可。
+
+这里要额外注意参数格式：
+
+```json
+{
+    "Command": "deploy", // 用户使用的方法名称
+    "Project": {
+        "ProjectName": "DjangoProject",  // 用户Yaml的ProjectName，在当前Yaml文件下唯一
+        "Component": "website", // 用户使用的组件名，实际上就是你目前开发的组件
+        "Provider": "huaweicloud",  // 用户的云厂商名称
+        "AccessAlias": "demo" // 用户使用的密钥别名
+    },
+    "Credentials": {}, // 密钥信息
+    "Properties": {}, // Yaml输入
+    "Args": "" // 命令行输入的参数
+}
+```
+
 ## 额外说明
 
 * 包类型+包名称+云厂商+版本 是包的唯一标识，全局唯一不可重复；

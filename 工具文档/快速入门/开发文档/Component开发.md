@@ -85,10 +85,10 @@ $ s platform init -t component
 Initializing......
 Initialization successfully
 $ ls  
-publish.yaml	readme.md
+src    publish.yaml	    readme.md
 ```
 
-此时，我们创建一个目录`src`, 并且在`src`目录下创建`index.js`：
+此时，我们创建一个目录`src`, 并且在`src`目录下创建`index.js`, 当然，如果项目本身已经存在了，可以跳过这一步骤：
 
 ```
 $ mkdir src && cd src && touch index.js
