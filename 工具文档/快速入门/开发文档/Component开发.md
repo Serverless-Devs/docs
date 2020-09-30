@@ -71,6 +71,302 @@ Properties:
 
 这个文件是项目的简介，您可以通过这部分，为您的项目写一份完整的描述文档，这样大家在使用您的项目的时候，才可以更加简单，轻松快速的用的起来。
 
+## 项目开发
+
+本例子仅是一个开发样例，尽可能的为您描述清楚每个开发细节。如果有任何问题可以随时和我取得联系（Wechat：anycodes_02）
+
+### 创建项目
+
+在控制台执行：`s platform init -t component`，即可创建一个Component模板：
+
+```
+$ s platform init -t component
+
+Initializing......
+Initialization successfully
+$ ls  
+publish.yaml	readme.md
+```
+
+此时，我们创建一个目录`src`, 并且在`src`目录下创建`index.js`：
+
+```
+$ mkdir src && cd src && touch index.js
+$ ls
+index.js
+
+```
+> 这里要额外说明，大家在发布自己的`component`的时候（即执行`s platform publish`的时候），系统会打包`src`目录下的所有文件，并且上传到服务端。所以这个目录下请勿放敏感信息和数据。
+> 在用户使用您开发的组件的时候，会默认寻找`index.js`文件，所以，这个文件是必须存在的。
+
+### 开发组件
+
+本组件仅供测试，希望您可以通过这个组件开发过程，可以有所收获。
+
+首先要明确的是，我们的`index.js`基本样子：
+
+```javascript
+const { Component } = require('@serverless-devs/s-core')
+class MyComponent extends Component {
+}
+module.exports = MyComponent
+```
+
+我们需要对外暴露的方法，直接写在`MyComponent`中即可，例如，我需要对外暴露一个`test`方法，就是输出Hello World，那么此时：
+
+```javascript
+const { Component } = require('@serverless-devs/s-core')
+class MyComponent extends Component {
+    async test(inputs){
+        return "hello world"
+    }   
+}
+module.exports = MyComponent
+```
+
+这里要额外注意，所有对外暴露的方法，会默认有一个入参，参数格式：
+
+```json
+{
+    "Command": "deploy", // 用户使用的方法名称
+    "Project": {
+        "ProjectName": "DjangoProject",  // 用户Yaml的ProjectName，在当前Yaml文件下唯一
+        "Component": "website", // 用户使用的组件名，实际上就是你目前开发的组件
+        "Provider": "huaweicloud",  // 用户的云厂商名称
+        "AccessAlias": "demo" // 用户使用的密钥别名
+    },
+    "Credentials": {}, // 密钥信息
+    "Properties": {}, // Yaml输入
+    "Args": "" // 命令行输入的参数
+}
+```
+
+例如，用户的Yaml格式为：
+
+```yaml
+HexoComponent:
+  Component: hexo
+  Provider: alibaba
+  Access: release
+  Properties:
+    Region: 'cn-hangzhou'
+    CodeUri: './src'
+```
+
+当用户执行`s deploy mytest -a -b abc`，此时，您的`deploy`方法，收到的`inputs`参数实际上是：
+
+```
+{
+    "Command": 'deploy', 
+    "Project": {
+        ProjectName: 'HexoComponent', 
+        Component: 'hexo',
+        Provider: 'alibaba',
+        AccessAlias：'release'
+    },
+    "Credentials": {
+        "AccountID": "********",
+        "AccessKeyID": "********",
+        "AccessKeySecret": "********",
+    },
+    "Properties": {
+        "Region": "cn-hangzhou",
+        "CodeUri": "./src"
+    },
+    "Args": "mytest -a -b abc"
+}
+```
+
+* 关于Credentials的说明，不同云厂商会提供不同的Key，例如：
+    ```
+    {
+      alibaba: ['AccountID', 'AccessKeyID', 'AccessKeySecret'],
+      aws: ['AccessKeyID', 'SecretAccessKey'],
+      baidu: ['AccessKeyID', 'SecretAccessKey'],
+      huawei: ['AccessKeyID', 'SecretAccessKey'],
+      azure: ['KeyVault', 'Secret'],
+      tencent: ['AccountID', 'SecretID', 'SecretKey'],
+      google: ['AccountID', 'PrivateKeyData']
+    }
+    ```
+  如果，用户此时是使用的在当前项目下的`access.yml`/`access.yaml`文件中的临时密钥，则此处的`Key`是该临时密钥。例如用户虽然配置了`Provider: alibaab`，但是他使用了`access.yaml`：
+  ```
+  # access.yaml
+  
+  mytest:
+    Key1: Value1
+    Key2: Value2
+  ```
+  此时，用户也配置了`Access`，且`Access: mytest`，那么此时您收到的`Credentials`，则为：
+  ```
+  "Credentials": {
+      "Key1": "Value1",
+      "Key2": "Value2"
+  },
+  ```
+  
+* 关于`Args`参数说明，这部分您收到的是字符串，但是实际上您可以通过继承的方法，直接解析出来，例如：
+  ```
+  this.args(inputs.Args)
+  ```
+  此时，我在控制台输入：
+  
+  ```
+  s deploy c-1 c-2 c-3 -a b --cc d
+  ```
+  
+  这一部分的解析结果是：
+  
+  ```
+  { Commands: [ 'c-1', 'c-2', 'c-3' ], Parameters: { a: 'b', cc: 'd' } }
+  ```
+  
+  其实在this.args()方法中是有三个参数的，即：
+  
+  - argsStr: 这部分是String类型，是参数
+  - boolList: 这部分是Array类型，是告诉解析时有那些参数是true/false类型
+  - moreList: 这部分是Array类型，是告诉解析时有那些参数是带有空格的
+  
+  例如，当我boolList设置成了`['a', 'b']`，那么当我传入的数据为`-a 1 -b 2 -c 3`
+  
+  系统为我解析的结果是： 
+  
+  ```
+  {
+    Commands: [ '1', '2' ],
+    Parameters: {
+      a: true,
+      b: true,
+      c: '3'
+    }
+  }
+  ```
+  
+  再例如，当我们的moreList设置为`['start-time']`之后，当我传入`-a 1 2 3 --start-time 4 5 6`
+  
+  系统为我解析的结果是： 
+  
+  ```
+  {
+    Commands: [ '2', '3' ],
+    Parameters: {
+      a: '1',
+      start-time: '4 5 6'
+    }
+  }
+  ```
+  
+其实，在整个组件在执行过程中，你可以认为是在执行一段脚本。
+
+### 其他操作
+
+#### 状态存储
+
+状态的存储和读取，实际上是在项目中经常用到的，通过这个功能，我们可以存储简单的状态。
+
+> 例如，当用户部署一个hexo组件的时候，在用户没有指定函数名时，我们会为用户生成一个随机的函数名，当用户再次更部署的时候，我们需要检测到上次用户的一个函数名详情，进行更新操作，而不是创建新的操作。此时，就需要使用状态存储，存储一些额外的状态了；
+> 再例如，腾讯云的API网关的唯一Key的serviceId，那么这个Id只有我们部署完成，才会得到，所以我们在部署完成之后，要将该Id保存，再次部署的时候指定这个Id，而不是重新创建新的API网关服务。
+
+首先进行部分初始化：
+
+```
+await this.init()
+```
+
+然后进行可以读取状态和存储状态：
+
+读取状态：
+
+```
+const state = this.state
+```
+
+存储状态：
+
+```
+this.state = {}
+this.save()
+```
+
+#### 组件加载、调用
+
+这个部分主要是组件之间的依赖，例如在使用某个组件的时候，可能需要依赖某些基础组件，此时，我们就可以通过这个方法使用。
+
+例如，我在做某个Component的时候，需要导入fc组件，则：
+
+```
+const fc = await this.load('fc', 'Component', 'alibaba');
+```
+
+其中load有三个参数，分别是：
+
+- componentName： 组件名
+- componentAlias：设置的别名
+- provider：组件的提供商
+
+
+#### 帮助文档
+
+在某些多级指令下，组件内，可能需要输出帮助文档，可以使用本方法。
+
+直接将s启动器的inputs和help传入即可，例如：
+
+```
+this.help(inputs, {
+    "description": "这是帮助文档",
+    "commands": [{
+          "name": "指令1",
+          "desc": "指令1描述",
+        },{
+          "name": "指令2",
+          "desc": "指令2描述",
+        }],
+        "args": [{
+          "name": "参数1",
+          "desc": "参数1描述",
+        },{
+          "name": "参数2",
+          "desc": "参数2描述",
+    }],
+})
+
+```
+
+当用户执行`s deploy -h/--help`的时候：
+
+```
+
+    这是帮助文档
+
+
+  Commands: 
+      指令1: 指令1描述
+      指令2: 指令2描述
+
+  Args: 
+      参数1: 参数1描述
+      参数2: 参数2描述
+
+
+```
+
+#### 如何本地测试组件
+
+本地测试组件的方法很简单，我们只需要在Component中写上本地路径即可，即通过这个路径，直接就可以找到`index.js`文件。例如：
+
+```
+HexoComponent:
+  Component: /Users/jiangyu/Desktop/components/fc/src
+  Provider: alibaba
+  Properties:
+    Region: 'cn-hangzhou'
+    CodeUri: './src'
+```
+
+## 发布组件
+
+发布组件可以参考[Package开发指南](../Package开发指南.md)
+
 ## 额外说明
 
 * 包类型+包名称+云厂商+版本 是包的唯一标识，全局唯一不可重复；
