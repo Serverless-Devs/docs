@@ -20,3 +20,7 @@
 
 - [腾讯云 API网关](https://github.com/Serverless-Devs/apigateway-tencent/blob/master/readme.md)
 - [腾讯云 云函数](https://github.com/Serverless-Devs/scf-tencent/blob/master/readme.md)
+
+## 应用
+
+[应用列表](https://github.com/Serverless-Devs/Applications/blob/master/Readme.md)
