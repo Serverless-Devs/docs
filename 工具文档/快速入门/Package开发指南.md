@@ -58,7 +58,7 @@
 s platform login -u username -p password
 ```
 
-> 如果您没有账号，您需要先进行注册账号（目前阶段暂不开发账号注册，可以联系微信: anycodes_02, 或者钉钉：3ga_y0qsmdx5y注册账号）
+> 如果您没有账号，您需要先进行注册账号：`s platform login --gui`之后，通过选择注册选项即可进行注册
 
 ## 发布Package
 
