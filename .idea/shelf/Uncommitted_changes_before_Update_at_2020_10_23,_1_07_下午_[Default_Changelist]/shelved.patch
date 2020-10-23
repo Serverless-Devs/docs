@@ -1,0 +1,20 @@
+Index: 应用中心/readme.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 索引\n\n## 组件\n\n### 阿里云\n\n- [阿里云 函数计算](https://github.com/Serverless-Devs/fc-alibaba/blob/master/readme.md)\n- [阿里云 Egg](https://github.com/Serverless-Devs/egg-alibaba/blob/master/readme.md)\n- [阿里云 Express](https://github.com/Serverless-Devs/express-alibaba/blob/master/readme.md)\n- [阿里云 Hexo](https://github.com/Serverless-Devs/hexo-alibaba/blob/master/readme.md)\n- [阿里云 Nextjs](https://github.com/Serverless-Devs/nextjs-alibaba/blob/master/readme.md)\n- [阿里云 Nuxtjs](https://github.com/Serverless-Devs/nuxtjs-alibaba/blob/master/readme.md)\n- [阿里云 Tornado](https://github.com/Serverless-Devs/tornado-alibaba/blob/master/readme.md)\n- [阿里云 Bottle](https://github.com/Serverless-Devs/bottle-alibaba/blob/master/readme.md)\n- [阿里云 Flask](https://github.com/Serverless-Devs/flask-alibaba/blob/master/readme.md)\n- [阿里云 Web.py](https://github.com/Serverless-Devs/webpy-alibaba/blob/master/readme.md)\n\n\n### 腾讯云\n\n- [腾讯云 API网关](https://github.com/Serverless-Devs/apigateway-tencent/blob/master/readme.md)\n- [腾讯云 云函数](https://github.com/Serverless-Devs/scf-tencent/blob/master/readme.md)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 应用中心/readme.md	(revision 2eecd1675302ad1f8e303999e15135beb50fb51b)
++++ 应用中心/readme.md	(date 1603344523355)
+@@ -19,4 +19,8 @@
+ ### 腾讯云
+ 
+ - [腾讯云 API网关](https://github.com/Serverless-Devs/apigateway-tencent/blob/master/readme.md)
+-- [腾讯云 云函数](https://github.com/Serverless-Devs/scf-tencent/blob/master/readme.md)
+\ No newline at end of file
++- [腾讯云 云函数](https://github.com/Serverless-Devs/scf-tencent/blob/master/readme.md)
++
++## 应用
++
++[应用列表](https://github.com/Serverless-Devs/Applications/blob/master/Readme.md)

@@ -3,7 +3,7 @@
 * 名称：Serverless Devs
 * 标志：
          
-  ![](https://images.serverlessfans.com/s-tool/logo.jpg)       
+  ![](https://images.serverlessfans.com/s-tool/logo-new.jpg)       
   
   
 * 所属组织：Serverless Devs（Serverless Devs是一群Serverless爱好者，共建的一个Serverless生态，开源+开放，我们要做的不是为某个厂商而存在的工具，我们要做的是为开发者而存在的工具！）
