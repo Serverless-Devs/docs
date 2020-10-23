@@ -15,7 +15,7 @@
 
 ## 初始化Package
 
-此时您可以参考[platform指令文档中的初始化项目](../指令相关/Platform指令.md#初始化项目)
+此时您可以参考[platform指令文档中的初始化项目](../开发者工具/指令相关/Platform指令.md#初始化项目)
 
 您可以在此处初始化一个模板，这个模板指的是，您要将应用/组件/插件发布到应用商城的模板。
 
@@ -44,7 +44,7 @@
 
 如果您已经登陆过账号则可以跳过该步骤，如果您未登陆过账号，您需要在此处进行登录。
 
-此时您可以参考[platform指令文档中的登陆账号部分](../指令相关/Platform指令.md#登陆账号)
+此时您可以参考[platform指令文档中的登陆账号部分](../开发者工具/指令相关/Platform指令.md#登陆账号)
 
 您可以通过`s platform login`指令进行登陆操作。
 
@@ -62,7 +62,7 @@ s platform login -u username -p password
 
 ## 发布Package
 
-此时您可以参考[platform指令文档中的发布部分](../指令相关/Platform指令.md#登陆账号)
+此时您可以参考[platform指令文档中的发布部分](../开发者工具/指令相关/Platform指令.md#登陆账号)
 
 当您开发完成一个package（组件/插件/应用），您可以通过`s platform publish`将其发布到应用中心：
 

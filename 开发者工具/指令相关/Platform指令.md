@@ -48,7 +48,7 @@ s platform login -u username -p password
 
 ![](https://images.serverlessfans.com/s-tool/zh/s-platform-init-help.jpg)
 
-> 关于应用、组件和插件的概念可以查看[相关文档](../others/Package概念区分.md)
+> 关于应用、组件和插件的概念可以查看[相关文档](../../Serverless-Devs/Package概念区分.md)
 
 ## 发布包
 
