@@ -1,8 +1,8 @@
 # 简介
 
-Serverless Devs App Store 是一个集 Serverless 应用在线搜索，一键部署以及资源可视化编辑于一体的应用中心产品。应用中心拥有海量的生产级项目模板，案例模板，开发者可以自由选择，并将项目一键部署到指定的云平台上。
+**Serverless Devs Tool** 是一款可以让 Serverless 开发者开发和运维效率翻倍的工具。通过使用该工具，开发者可以更简单、更快速的进行应用创建、项目开发、测试、发布部署等，实现项目的全生命周期管理
 
-您在[安装Serverless Devs Tool](../开发者工具/快速入门/工具安装.md)之后，可以通过`s gui`唤起该页面。当然，您也可以通过一些子命令进行该页面的唤起，例如：
+您在[安装Serverless Devs Tool](../Serverless-Devs-Tool/其他文档/工具安装.md)之后，可以通过`s gui`唤起该页面。当然，您也可以通过一些子命令进行该页面的唤起，例如：
 
 - 在`s search`的时候，可以通过`s search --gui`唤起GUI页面进行搜索；
 - 在`s init`的时候，可以通过`s init --gui`唤起GUI页面进行初始化；
@@ -11,7 +11,7 @@ Serverless Devs App Store 是一个集 Serverless 应用在线搜索，一键部
 
 ![](https://images.serverlessfans.com/s-gui/docs/app-store-index.jpg)
 
-可以点击每个组件/插件/应用的标题（关于三者区别[可以查看文档](../Serverless-Devs/Package概念区分.md)），进入到详情:
+可以点击每个组件/插件/应用的标题（关于三者区别[可以查看文档](../Serverless-Devs/Package相关/Package概念区分.md)），进入到详情:
 
 ![](https://images.serverlessfans.com/s-gui/docs/app-store-content.jpg)
 
@@ -23,7 +23,12 @@ Serverless Devs App Store 是一个集 Serverless 应用在线搜索，一键部
 
 ![](https://images.serverlessfans.com/s-gui/docs/app-store-demo.jpg)
 
-一个相对完整的例子：[入门案例](./入门案例.md)
+
+-----
+
+- 更多链接
+  - 一个相对完整的例子：[入门案例](./快速开始.md)    
+  - 更多应用/组件/插件汇总：[Package汇总](./Package汇总.md)    
 
 
 

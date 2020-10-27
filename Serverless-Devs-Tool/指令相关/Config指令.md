@@ -8,6 +8,7 @@ Config指令是用来配置账号信息的指令。确切来说，在Serverless 
 - [config update](#Config-update-指令)
 - [相关说明](#相关说明)
 - [帮助信息](#帮助信息)
+- [云厂商密钥获取方案](#云厂商密钥获取方案)
 
 ## Config add 指令
 
@@ -191,3 +192,13 @@ MyTest1:
 当然，您还可以通过`s config`或者`s config -h`调出帮助文档信息：
 
 ![](https://images.serverlessfans.com/s-tool/zh/s-config-help.jpg)
+
+## 云厂商密钥获取方案
+
+- [阿里云](../../Serverless-Devs/密钥相关/阿里云密钥获取.md)
+- [百度云](../../Serverless-Devs/密钥相关/百度云密钥获取.md)
+- [AWS](../../Serverless-Devs/密钥相关/AWS密钥获取.md)
+- [Azure](../../Serverless-Devs/密钥相关/Azure密钥获取.md)
+- [Google Cloud](../../Serverless-Devs/密钥相关/GoogleCloud密钥获取.md)
+- [华为云](../../Serverless-Devs/密钥相关/华为云密钥获取.md)
+- [腾讯云](../../Serverless-Devs/密钥相关/腾讯云密钥获取.md)

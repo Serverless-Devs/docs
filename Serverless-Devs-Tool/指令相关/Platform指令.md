@@ -1,6 +1,6 @@
 # Platform指令帮助文档
 
-Platform是命令行工具与应用中心连接的桥梁，您可以通过Platform中的相关指令，来发布、升级、删除相关组件、插件、应用（关于应用、组件和插件的概念可以查看[相关文档](../others/Package概念区分.md)）。
+Platform是命令行工具与应用中心连接的桥梁，您可以通过Platform中的相关指令，来发布、升级、删除相关组件、插件、应用（关于应用、组件和插件的概念可以查看[相关文档](../../Serverless-Devs/Package相关/Package概念区分.md)）。
 
 - [登陆账号](#登陆账号)
 - [初始化项目](#初始化项目)
@@ -32,7 +32,7 @@ s platform login -u username -p password
 
 ## 初始化项目
 
-您可以在此处初始化一个模板，这个模板指的是，您要将应用/组件/插件发布到应用商城的模板(您可以参考开发应用/组件/插件[相关文档](../快速入门/Package开发指南.md))。
+您可以在此处初始化一个模板，这个模板指的是，您要将应用/组件/插件发布到应用商城的模板(您可以参考开发应用/组件/插件[相关文档](../../Serverless-Devs/Package相关/Package开发指南.md))。
 
 例如，我想初始化一个组件，我可以执行`s platform init -t Component`，得到结果：
 
@@ -48,7 +48,7 @@ s platform login -u username -p password
 
 ![](https://images.serverlessfans.com/s-tool/zh/s-platform-init-help.jpg)
 
-> 关于应用、组件和插件的概念可以查看[相关文档](../../Serverless-Devs/Package概念区分.md)
+> 关于应用、组件和插件的概念可以查看[相关文档](../../Serverless-Devs/Package相关/Package概念区分.md)
 
 ## 发布包
 
