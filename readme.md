@@ -1,15 +1,16 @@
 # 欢迎使用 Serverless Devs 帮助文档
 
 ```
-  _________                               .__
- /   _____/ ______________  __ ___________|  |   ____   ______ ______
- \_____  \_/ __ \_  __ \  \/ // __ \_  __ \  | _/ __ \ /  ___//  ___/
- /        \  ___/|  | \/\   /\  ___/|  | \/  |_\  ___/ \___ \ \___ \
-/_______  /\___  >__|    \_/  \___  >__|  |____/\___  >____  >____  >
-        \/     \/                 \/                \/     \/     \/
+  _________                               .__                         ________                     
+ /   _____/ ______________  __ ___________|  |   ____   ______ ______ \______ \   _______  ________
+ \_____  \_/ __ \_  __ \  \/ // __ \_  __ \  | _/ __ \ /  ___//  ___/  |    |  \_/ __ \  \/ /  ___/
+ /        \  ___/|  | \/\   /\  ___/|  | \/  |_\  ___/ \___ \ \___ \   |    `   \  ___/\   /\___ \ 
+/_______  /\___  >__|    \_/  \___  >__|  |____/\___  >____  >____  > /_______  /\___  >\_//____  >
+        \/     \/                 \/                \/     \/     \/          \/     \/         \/ 
 ```
 
 * [项目介绍](./Serverless-Devs/Serverless-Devs介绍.md)
+* [快速入门](./Serverless-Devs/快速入门.md)
 * 命令行工具
   * 入门文档
     * [快速入门](./Serverless-Devs-Tool/快速开始.md)
@@ -34,11 +35,11 @@
     * [应用列表](https://github.com/Serverless-Devs/Application)
     * [插件列表](https://github.com/Serverless-Devs/Plugin)
 * 其他文档
-  * [Package概念](https://github.com/Serverless-Devs/docs/blob/master/Serverless-Devs/Package概念区分.md)
-  * [Package开发指南](https://github.com/Serverless-Devs/docs/blob/master/Serverless-Devs/Package开发指南.md)
+  * [Package概念](./Serverless-Devs/Package相关/Package概念区分.md)
+  * [Package开发指南](./Serverless-Devs/Package相关/Package开发指南.md)
   * Package开发文档
     * [Component开发](./Serverless-Devs/Package相关/开发文档/Component开发.md) 
     * [Application开发](./Serverless-Devs/Package相关/开发文档/Application开发.md) 
     * [Plugin开发](./Serverless-Devs/Package相关/开发文档/Plugin开发.md) 
 * 常见问答：
-  * [常见问答](https://github.com/Serverless-Devs/docs/blob/master/开发者工具/快速入门/faq.md)
+  * [常见问答](./faq.md)
