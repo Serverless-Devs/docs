@@ -43,5 +43,13 @@
     * [Component开发](./Serverless-Devs/Package相关/开发文档/Component开发.md) 
     * [Application开发](./Serverless-Devs/Package相关/开发文档/Application开发.md) 
     * [Plugin开发](./Serverless-Devs/Package相关/开发文档/Plugin开发.md) 
+  * 各云厂商密钥（凭证）获取方法
+    * [阿里云](./Serverless-Devs/密钥相关/阿里云密钥获取.md)
+    * [百度云](./Serverless-Devs/密钥相关/百度云密钥获取.md)
+    * [AWS](./Serverless-Devs/密钥相关/AWS密钥获取.md)
+    * [Azure](./Serverless-Devs/密钥相关/Azure密钥获取.md)
+    * [Google Cloud](./Serverless-Devs/密钥相关/GoogleCloud密钥获取.md)
+    * [华为云](./Serverless-Devs/密钥相关/华为云密钥获取.md)
+    * [腾讯云](./Serverless-Devs/密钥相关/腾讯云密钥获取.md)
 * 常见问答：
   * [常见问答](./faq.md)
