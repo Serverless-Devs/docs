@@ -195,10 +195,10 @@ MyTest1:
 
 ## 云厂商密钥获取方案
 
-- [阿里云](../../Serverless-Devs/密钥相关/阿里云密钥获取.md)
-- [百度云](../../Serverless-Devs/密钥相关/百度云密钥获取.md)
-- [AWS](../../Serverless-Devs/密钥相关/AWS密钥获取.md)
-- [Azure](../../Serverless-Devs/密钥相关/Azure密钥获取.md)
-- [Google Cloud](../../Serverless-Devs/密钥相关/GoogleCloud密钥获取.md)
-- [华为云](../../Serverless-Devs/密钥相关/华为云密钥获取.md)
-- [腾讯云](../../Serverless-Devs/密钥相关/腾讯云密钥获取.md)
+- [阿里云](../../others/密钥相关/阿里云密钥获取.md)
+- [百度云](../../others/密钥相关/百度云密钥获取.md)
+- [AWS](../../others/密钥相关/AWS密钥获取.md)
+- [Azure](../../others/密钥相关/Azure密钥获取.md)
+- [Google Cloud](../../others/密钥相关/GoogleCloud密钥获取.md)
+- [华为云](../../others/密钥相关/华为云密钥获取.md)
+- [腾讯云](../../others/密钥相关/腾讯云密钥获取.md)
