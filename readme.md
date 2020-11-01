@@ -1,8 +1,8 @@
 # 欢迎使用 Serverless Devs 帮助文档
 
-> - 官方网址：[https://www.serverles-devs.com](https://www.serverles-devs.com)
-> - 文档地址：[https://www.serverles-devs.com/docs/](https://www.serverles-devs.com/docs/)
-> - 博客地址：[https://www.serverles-devs.com/blog/](https://www.serverles-devs.com/blog/)
+> - 官方网址：[https://www.serverless-devs.com](https://www.serverless-devs.com)
+> - 文档地址：[https://www.serverless-devs.com/docs/](https://www.serverless-devs.com/docs/)
+> - 博客地址：[https://www.serverless-devs.com/blog/](https://www.serverless-devs.com/blog/)
 
 ```
   _________                               .__                         ________                     
