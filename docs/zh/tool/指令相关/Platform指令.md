@@ -73,8 +73,7 @@ s platform login -u username -p password
 
 删除的时候您需要指定相关信息：
 
-- `-n\--name`: 包名称
-- `-k\--version`: 包版本
+- `-nv\--name-version`: 包名称@版本，例如`fc-jiangyu@0.0.19`
 - `-t\--type`: 包类型，包括Component、Plugin、Application
 - `-p\--provider`: 云厂商
 
