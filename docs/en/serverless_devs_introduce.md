@@ -7,9 +7,9 @@
 </p>
 
 - [:thumbsup: Project advantage ](#Project-advantages)
-- [:iphone: perform Serverless like a mobile phone ](#Perform-Serverless-like-a-mobile-phone)
-- [:house_with_garden: the scenario of Serverless ](#Use-scenarios)
-- [:heavy_check_mark: quick-in installation and use ](#Fast-entry-installation-and-use)
+- [:iphone: Perform Serverless like a mobile phone ](#Perform-Serverless-like-a-mobile-phone)
+- [:house_with_garden: The scenario of Serverless ](#Use-scenarios)
+- [:heavy_check_mark: Quick-in installation and use ](#Fast-entry-installation-and-use)
 
 Serverless Devs is an open-source and Serverless developer platform, dedicated to providing developers with a powerful tool chain system. Through this platform, developers can experience multi-cloud Serverless products in one click and quickly deploy Serverless projects.
 
