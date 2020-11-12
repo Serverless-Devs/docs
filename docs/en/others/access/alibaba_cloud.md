@@ -8,6 +8,7 @@ Obtain key information page: https://usercenter.console.aliyun.com/#/manage/ak
 ![AccountId retrieval page](https://images.serverlessfans.com/access/aliyun-accountid.jpg)
 
 - Open [obtain key dialog box ](https://usercenter.console.aliyun.com/#/manage/ak) obtain the key information:
+
 ![Obtain key dialog box](https://images.serverlessfans.com/access/aliyun-access.jpg)
 
 > Your Alibaba Cloud account AccessKey is used to access Alibaba Cloud APIs. You must keep your account AccessKey properly! Do not pass any means (e. G. Release the AccessKey to external channels to prevent unauthorized use of the AccessKey. [Security threats ](https://help.aliyun.com/knowledge_detail/54059.html? spm=5176.2020520153.0.0.57f1336a8PQ1KR).

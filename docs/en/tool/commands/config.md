@@ -31,20 +31,20 @@ Currently, this tool supports the following global configuration vendors (in alp
 When you enter `s config add `the system then enters the interactive add page where you can select a cloud vendor to add interactively.
 
 - Select Cloud Vendor
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add.jpg)
 
 - Enter the corresponding parameters as required.
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add-select.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add-select.jpg)
 
    > The last content to interact with is an alias. This content is optional. `Default `, in theory `cloud vendor + alias `the combination of is unique.
 
 - Finally, the system will let you preview the results and store the input in the system.
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add-select-result.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add-select-result.jpg)
 
 ### Command addition
 
 By running the add secret information command, you can easily and quickly configure the secret information. Take Alibaba Cloud as an example:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add-direct.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add-direct.jpg)
 
 The following table lists the different settings for different cloud vendors:
 
@@ -77,27 +77,27 @@ In this way, you can configure a custom key information, and of course, you can 
 ### Query help information about Serverless Workflow
 
 You can run commands `s config add -h `obtain help information:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add-help.jpg)
 
 ## Config get directive
 
 By `s config get `instruction to get the account information that has been configured.
 
 - For example, to obtain all key information: `s config get -l`
-[](https://images.serverlessfans.com/s-tool/zh/s-config-get-l.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-get-l.jpg)
 
    > If the format is cloud vendor (identify), the configuration is global, such as Alibaba in the figure. If the format is project, the current project configuration is used.
 
 - For example, to obtain the key information of a cloud vendor: `s config get -p alibaba`
-[](https://images.serverlessfans.com/s-tool/zh/s-config-get-provider.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-get-provider.jpg)
 
    > By default, the system generates information about the cmk and the CMK in the current project.
 
 - To obtain the information about a specified key, use the Baidu demo in the preceding figure as an example: `s config get -p baidu -a demo`
-[](https://images.serverlessfans.com/s-tool/zh/s-config-get-provider-alias.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-get-provider-alias.jpg)
 
 Of course, you can also pass `s config get `or `s config get -h `bring up help document information:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-get-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-get-help.jpg)
 
 ## Config delete directive
 
@@ -120,7 +120,7 @@ s config delete -p alibaba -a default
 > You can only delete the globally configured key information. That is `s config add `you cannot delete a temporary key of the current project.
 
 Of course, you can also pass `s config delete `or `s config delete -h `bring up help document information:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-delete-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-delete-help.jpg)
 
 ## Config update directive
 
@@ -131,7 +131,7 @@ And `s config add `the instruction is similar, `update `methods also have two fo
 ### Interactive modification
 
 When only a vendor and alias are specified, interactive modification can be invoked:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-update-select.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-update-select.jpg)
 
 Here, you can modify the corresponding field information according to the system prompts. If you do not modify the configuration, press enter to skip the configuration.
 
@@ -148,10 +148,10 @@ alibaba: AccountID, AccessKeyID, AccessKeySecret
 ```
 
 The system will modify the corresponding content. For example, replace `AccessKeyID `to modify:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-update-direct.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-update-direct.jpg)
 
 Of course, you can also pass `s config update `or `s config update -h `bring up help document information:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-update-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-update-help.jpg)
 
 ## Additional information
 
@@ -175,12 +175,12 @@ MyTest1:
 ### Key information usage sequence
 
 If you use a cloud vendor, the project contains the temporary key information and the global key information contains the key with the same alias. The system policies are as follows:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-extend-sort.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-extend-sort.jpg)
 
 ## Help information
 
 Of course, you can also pass `s config `or `s config -h `bring up help document information:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-help.jpg)
 
 ## Cloud vendor key access solution
 

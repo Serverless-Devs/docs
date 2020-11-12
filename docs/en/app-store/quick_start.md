@@ -13,23 +13,23 @@
 ## Graphic tutorial
 
 1. You can directly `s gui `open the Application Center:
-[](https://images.serverlessfans.com/s-gui/docs/docs-demo-1.png)
+![](https://images.serverlessfans.com/s-gui/docs/docs-demo-1.png)
 
 > If not installed `Serverless Devs Tool `developer Tools. For more information, see [installation Instructions ](../serverless_devs_introduce.md).
 
 2. Select an application, for example, Hexo blog application here:
-[](https://images.serverlessfans.com/s-gui/docs/docs-demo-2.png)
+![](https://images.serverlessfans.com/s-gui/docs/docs-demo-2.png)
 
 3. Click Quick deployment to deploy the project:
-[](https://images.serverlessfans.com/s-gui/docs/docs-demo-3.png)
+![](https://images.serverlessfans.com/s-gui/docs/docs-demo-3.png)
 &bull; Select a folder and initialize the project:
-[](https://images.serverlessfans.com/s-gui/docs/docs-demo-4.png)
+![](https://images.serverlessfans.com/s-gui/docs/docs-demo-4.png)
 &bull; Go to the configurations page to configure the basic information:
-[](https://images.serverlessfans.com/s-gui/docs/docs-demo-5.png)
+![](https://images.serverlessfans.com/s-gui/docs/docs-demo-5.png)
 After completion, you can directly deploy:
-[](https://images.serverlessfans.com/s-gui/docs/docs-demo-6.png)
+![](https://images.serverlessfans.com/s-gui/docs/docs-demo-6.png)
 &bull; After the deployment is complete, copy the Domains in the final output and open them in a browser:
-[](https://images.serverlessfans.com/s-gui/docs/docs-demo-7.png)
+![](https://images.serverlessfans.com/s-gui/docs/docs-demo-7.png)
 
 Now, you have deployed a blog system in the application center.
 

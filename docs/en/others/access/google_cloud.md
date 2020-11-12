@@ -5,11 +5,11 @@ Google Cloud website: https://cloud.google.com
 - Open [Google Cloud website ](https://cloud.google.com) to sign in, select the project, go to the project:
 ![Obtain key dialog box](https://images.serverlessfans.com/access/google-console.jpg)
 - In the left-side navigation pane, click service accounts]:
-[](https://images.serverlessfans.com/access/google-service.jpg)
+![](https://images.serverlessfans.com/access/google-service.jpg)
 - Click create service account]:
-[](https://images.serverlessfans.com/access/google-add.jpg)
+![](https://images.serverlessfans.com/access/google-add.jpg)
 - The corresponding file is downloaded after the file is created]]:
-[](https://images.serverlessfans.com/access/google-access.jpg)
+![](https://images.serverlessfans.com/access/google-access.jpg)
 - Store the file locally and configure the stored absolute path `S `tools required `PrivateKeyData `medium
 
 > When you use API keys in your app, make sure they are secure during storage and transfer. Public disclosure of credentials may cause your account to be stolen, which may incur unexpected charges to your account. To help secure your API keys, follow these best practices:

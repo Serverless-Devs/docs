@@ -5,9 +5,9 @@ Huawei Cloud official website: https://www.huaweicloud.com/
 - Open [huawei Cloud website ](https://www.huaweicloud.com/) to log on to the console. Click my credentials in the upper-right corner and then click access keys in the left-side navigation pane]:
 ![Obtain key dialog box](https://images.serverlessfans.com/access/huawei-page.jpg)
 - Click Add access key. A dialog box appears, verifying the security of the access key. The dialog box appears:
-[](https://images.serverlessfans.com/access/huawei-download.jpg)
+![](https://images.serverlessfans.com/access/huawei-download.jpg)
 - You can see your key information after downloading:
-[](https://images.serverlessfans.com/access/huawei-access.jpg)
+![](https://images.serverlessfans.com/access/huawei-access.jpg)
 
 > To ensure account security, we recommend that you change your accesskey on a regular basis and store it properly.
 

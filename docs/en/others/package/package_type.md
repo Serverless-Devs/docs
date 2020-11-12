@@ -10,15 +10,15 @@ First of all, for sure, Serverless devtool is a project where components and plu
 | Whether there is dependency | Dependent projects | Item |
 
 Well, such a simple table may be difficult to describe clearly, so we will use a practical example:
-[](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-1.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-1.jpg)
 
 In this Yaml, we can see that there is a project here that is `Projectname `, this project depends on the component `stest `, in the project execution `deploy `method (this method is `stest `component defined by the component itself, perform a `stest_plugin `component. The relationships among components, plugins, and Yaml files are as follows:
-[](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-2.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-2.jpg)
 
 In other words, a Yaml file can support the deployment of multiple projects. Each project corresponds to a component that is used to deploy each project. However, some components may not be able to complete a task better in some cases, so plugins/hooks are required at this time. For example, when we deploy a static website project, we can put this static website project through `Website `the component is deployed online, but if the project is a Vue project, we may want `npm build `at this time we can be in `Website `add a plugin on the component. When the component is deployed, the plugin is executed first. This method will actually play an interesting role in our project engineering or CICD process.
 
 So, what is an application? In fact, the definition of an application is quite extensive. You can think of an application as a Yaml file that includes the code that comes with the Yaml file and includes the resource description file (Yaml file). Etc. In general, it is as follows:
-[](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-3.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-3.jpg)
 
 We can think of an application `hello_world `an audio and video processing case, deploy an online transcoding capability, deploy a......
 

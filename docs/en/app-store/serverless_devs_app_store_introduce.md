@@ -8,16 +8,16 @@ You are in [install the Serverless Devs Tool ](../tool/install.md), you can `s g
 - In `s init `when, you can pass `s init --gui `evoke GUI page for initialization;
 
 Homepage of the Application Center:
-[](https://images.serverlessfans.com/s-gui/docs/app-store-index.jpg)
+![](https://images.serverlessfans.com/s-gui/docs/app-store-index.jpg)
 
 You can click the title of each component/plugin/application (about the differences between the three [can View Documents ](../others/package/package_type.md), go to the details page:
-[](https://images.serverlessfans.com/s-gui/docs/app-store-content.jpg)
+![](https://images.serverlessfans.com/s-gui/docs/app-store-content.jpg)
 
 You can also click the buttons such as quick deployment to go to the Yaml editing page:
-[](https://images.serverlessfans.com/s-gui/docs/app-store-yaml.jpg)
+![](https://images.serverlessfans.com/s-gui/docs/app-store-yaml.jpg)
 
 On this page, you can write Yaml files visually by filling in the form content on the left. After you edit the file, click save to save the Yaml file to your local device, you can also directly deploy the application:
-[](https://images.serverlessfans.com/s-gui/docs/app-store-demo.jpg)
+![](https://images.serverlessfans.com/s-gui/docs/app-store-demo.jpg)
 
 -----
 

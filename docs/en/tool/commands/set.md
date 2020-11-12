@@ -33,7 +33,7 @@ s set language en
 ### Query help information about Serverless Workflow
 
 You can run commands `s set language -h `obtain help information:
-[](https://images.serverlessfans.com/s-tool/zh/s-set-language-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-set-language-help.jpg)
 
 ## Set output color
 
@@ -58,7 +58,7 @@ s set output-color enable
 ### Query help information about Serverless Workflow
 
 You can run commands `s set output-color -h `obtain help information:
-[](https://images.serverlessfans.com/s-tool/zh/s-set-output-color-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-set-output-color-help.jpg)
 
 ## Configure Data Reporting
 
@@ -87,10 +87,10 @@ s set analysis enable
 ### Query help information about Serverless Workflow
 
 You can run commands `s set analysis -h `obtain help information:
-[](https://images.serverlessfans.com/s-tool/zh/s-set-analysis-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-set-analysis-help.jpg)
 
 ## Help information
 
 Of course, you can also pass `s set `or `s set -h `bring up help document information:
-[](https://images.serverlessfans.com/s-tool/zh/s-set-help.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-set-help.jpg)
 

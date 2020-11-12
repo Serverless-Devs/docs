@@ -13,28 +13,22 @@
 ## Graphic tutorial
 
 1. Use `npm install -g @ serverless-devs` to install the tool:
-
-[](https://images.serverlessfans.com/s-tool/demo/tool-demo-1.png)
+![](https://images.serverlessfans.com/s-tool/demo/tool-demo-1.png)
 
 2. After the installation is complete, you can run config add: s to configure keys for different cloud vendors as prompted.
 
 3. Search for and initialize a project. For example, I want to initialize an alibaba python project:
-
-[](https://images.serverlessfans.com/s-tool/demo/tool-demo-2.png)
+![](https://images.serverlessfans.com/s-tool/demo/tool-demo-2.png)
 
 4. After completion, I initialized through s init:
-
-[](https://images.serverlessfans.com/s-tool/demo/tool-demo-3.png)
+![](https://images.serverlessfans.com/s-tool/demo/tool-demo-3.png)
 
 5. After initialization, you can directly go to the project and deploy:
-
-[](https://images.serverlessfans.com/s-tool/demo/tool-demo-4.png)
+![](https://images.serverlessfans.com/s-tool/demo/tool-demo-4.png)
 
 6. Wait a moment and the deployment is completed:
-
-[](https://images.serverlessfans.com/s-tool/demo/tool-demo-5.png)
+![](https://images.serverlessfans.com/s-tool/demo/tool-demo-5.png)
 
 7. Copy address to browser:
-
-[](https://images.serverlessfans.com/s-tool/demo/tool-demo-6.png)
+![](https://images.serverlessfans.com/s-tool/demo/tool-demo-6.png)
 

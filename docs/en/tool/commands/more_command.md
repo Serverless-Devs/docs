@@ -27,10 +27,10 @@ MyFunctionDemo:
 ```
 
 At this point, we proceed under the Project Directory. `s -h `we can see that a new project has been added `MyFunctionDemo `instructions:
-[](https://images.serverlessfans.com/s-tool/zh/s-command-help-1.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-command-help-1.jpg)
 
 At this point, when we execute `s MyFunctionDemo -h `at that time, we can see some methods under our project:
-[](https://images.serverlessfans.com/s-tool/zh/s-command-help-2.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-command-help-2.jpg)
 
 At this point, we can execute the corresponding instructions and perform different operations, such `s MyFunctionDemo deploy `deploy the project.
 

@@ -3,7 +3,7 @@
 Thank you for preparing to develop the Serverless Devs Tool Package. We look forward to seeing that you can publish this Package to the application center to help more people.
 
 The basic process of developing a Package is as follows:
-[](https://images.serverlessfans.com/s-tool/zh/how-to-dev-package-1.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/how-to-dev-package-1.jpg)
 
 - [Initialize a Package ](#Initialize-a-Package)
 - [Project Development ](#Develop-projects)
@@ -18,7 +18,7 @@ At this point you can refer [initialization items in the platform directive docu
 You can initialize a template, which is the template for publishing applications, components, and plugins to the application marketplace.
 
 For example, I want to initialize a component, I can execute `s platform init -t Component `, get the result:
-[](https://images.serverlessfans.com/s-tool/zh/s-platform-init-component.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-platform-init-component.jpg)
 
 Where `-t\--type `valid values for include:
 
@@ -43,7 +43,7 @@ If you have already logged in to the account, you can skip this step. If you hav
 At this point you can refer [login account section in the platform instructions document ](../../tool/commands/platform.md#login-account)
 
 You can use `s platform login `command to log in.
-[](https://images.serverlessfans.com/s-tool/zh/s-platform-login.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-platform-login.jpg)
 
 In the output of interactive options, fill in your platform account password to complete login.
 
@@ -60,7 +60,7 @@ s platform login -u username -p password
 At this point you can refer [release section in the platform directive document ](../../tool/commands/platform.md#login-account)
 
 After you have developed a package (component/plugin/application), you can use `s platform publish `publish it to Application Center:
-[](https://images.serverlessfans.com/s-tool/zh/s-platform-publish.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-platform-publish.jpg)
 
 Additional statement is required here:
 
@@ -73,5 +73,5 @@ Additional statement is required here:
 ### Usage of components
 
 After you create a project, you can import the absolute path of the project to the console. Examples:
-[](https://images.serverlessfans.com/s-tool/zh/how-to-dev-package-2.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/how-to-dev-package-2.jpg)
 

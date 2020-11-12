@@ -32,20 +32,20 @@ Currently, this tool supports the following global configuration vendors (in alp
 When you enter `s config add `the system then enters the interactive add page where you can select a cloud vendor to add interactively.
 
 - Select Cloud Vendor
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add.jpg)
 
 - Enter the corresponding parameters as required.
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add-select.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add-select.jpg)
 
    > The last content to interact with is an alias. This content is optional. `Default `, in theory `cloud vendor + alias `the combination of is unique.
 
 - Finally, the system will let you preview the results and store the input in the system.
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add-select-result.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add-select-result.jpg)
 
 ### Command addition
 
 By running the add secret information command, you can easily and quickly configure the secret information. Take Alibaba Cloud as an example:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-add-direct.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-add-direct.jpg)
 
 The following table lists the different settings for different cloud vendors:
 
@@ -108,7 +108,7 @@ MyTest1:
 ## Key information usage sequence
 
 If you use a cloud vendor, the project contains the temporary key information and the global key information contains the key with the same alias. The system policies are as follows:
-[](https://images.serverlessfans.com/s-tool/zh/s-config-extend-sort.jpg)
+![](https://images.serverlessfans.com/s-tool/zh/s-config-extend-sort.jpg)
 
 ## Cloud vendor key configuration
 
