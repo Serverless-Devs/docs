@@ -9,7 +9,7 @@
 </p>
 
 > - Official website: [https://www.serverless-devs.com ](https://www.serverless-devs.com)
-> - Document website: [https://www.serverless-devs.com/docs/ ](https://www.serverless-devs.com/docs/en/)
+> - Document website: [https://www.serverless-devs.com/docs_en/ ](https://www.serverless-devs.com/docs_en/)
 
 
 ```
