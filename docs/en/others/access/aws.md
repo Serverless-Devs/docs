@@ -1,6 +1,6 @@
 # AWS key acquisition
 
-AWS official website: https://www.AWS.com
+AWS official website: https://www.AWS.com    
 
 - Open [AWS official website ](https://www.AWS.com) log on. Click my credentials in the upper-right corner]:
 ![Obtain key dialog box](https://images.serverlessfans.com/access/aws-page.jpg)

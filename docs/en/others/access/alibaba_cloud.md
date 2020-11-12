@@ -1,8 +1,8 @@
 # Obtain an Alibaba Cloud accesskey
 
-Alibaba Cloud official website: https://www.aliyun.com
-AccountId retrieval page: https://account.console.aliyun.com/#/secure
-Obtain key information page: https://usercenter.console.aliyun.com/#/manage/ak
+Alibaba Cloud official website: https://www.aliyun.com    
+AccountId retrieval page: https://account.console.aliyun.com/#/secure     
+Obtain key information page: https://usercenter.console.aliyun.com/#/manage/ak     
 
 - Open [AccountId retrieval page ](https://account.console.aliyun.com/#/secure) get the AccountId:
 ![AccountId retrieval page](https://images.serverlessfans.com/access/aliyun-accountid.jpg)
