@@ -11,7 +11,7 @@ In Serverless Devs Tool, you can use two methods to configure the key informatio
 
 Serverless Devs Tool provides a relatively complete and clear, mostly account configuration capabilities, you can configure including Alibaba, Baidu Cloud, Huawei Cloud, AWS, Google Cloud, permanent keys of cloud service providers such as Azure and Tencent Cloud.
 
-> For detailed method and process of configuration, you can see [config Command document ](. /Related instruction/Config instruction. md)
+> For detailed method and process of configuration, you can see [config Command document ](./commands/config.md)
 
 By `s config add `directive, you can add cloud vendor account information.
 
