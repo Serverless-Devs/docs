@@ -1,8 +1,5 @@
 # Serverless Devs help document
 
-> - Official website: [https://www.serverless-devs.com ](https://www.serverless-devs.com)
-> - Document website: [https://www.serverless-devs.com/docs/ ](https://www.serverless-devs.com/docs/en/)
-
 <div align=center> <img src="https://images.serverlessfans.com/devs-github/logo.jpg" width="100%"/> </div>
 
 
@@ -10,6 +7,10 @@
   <span>Use serverless like a mobile phone</span><br>
   <span><a href="./readme.md">中文文档</a> ｜ English </span>
 </p>
+
+> - Official website: [https://www.serverless-devs.com ](https://www.serverless-devs.com)
+> - Document website: [https://www.serverless-devs.com/docs/ ](https://www.serverless-devs.com/docs/en/)
+
 
 ```
   _________                               .__                         ________                     
@@ -25,8 +26,8 @@
 * CLI
    * Getting started
       * [Quickstart ](/docs/en/tool/quick_start.md)
-      * [Installation Instructions ](/docs/en/tool/tool installation.md)
-      * [Account configuration ](/docs/en/tool/key configuration.md)
+      * [Installation Instructions ](/docs/en/tool/install.md)
+      * [Account configuration ](/docs/en/tool/access_config.md)
       * [Configure Yaml ](/docs/en/tool/yaml_format.md)
    * Instruction document
       * [Config directive ](/docs/en/tool/commands/config.md)
