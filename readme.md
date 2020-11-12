@@ -1,8 +1,16 @@
 # 欢迎使用 Serverless Devs 帮助文档
 
+
+<div align=center> <img src="https://images.serverlessfans.com/devs-github/logo.jpg" width="100%"/> </div>
+
+
+<p align="center">
+  <span>像使用手机一样使用Serverless</span><br>
+  <span>中文文档 ｜ <a href="./readme_en.md">English</a>] </span>
+</p>
+
 > - 官方网址：[https://www.serverless-devs.com](https://www.serverless-devs.com)
 > - 文档地址：[https://www.serverless-devs.com/docs/](https://www.serverless-devs.com/docs/)
-> - 博客地址：[https://www.serverless-devs.com/blog/](https://www.serverless-devs.com/blog/)
 
 ```
   _________                               .__                         ________                     
