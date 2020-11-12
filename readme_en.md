@@ -8,7 +8,7 @@
 
 <p align="center">
   <span>Use serverless like a mobile phone</span><br>
-  <span><a href="./readme.md">中文文档</a>] ｜ English </span>
+  <span><a href="./readme.md">中文文档</a> ｜ English </span>
 </p>
 
 ```
