@@ -125,10 +125,10 @@ The Serverless Devs Tool analyzes the Yaml content and finds that `WebBackend `a
 
 In addition to the formats supported by Yaml, more formats supported by Yaml are as follows:
 
-- Obtain the value of the current environment variable :env {Env}, for example, ${Env(SecretId)}.
-- The :{{ File (path)} variable is used to obtain the external document. For example, ${File(./path)}
-- Obtain Global variables: variable {Global. *}
-- Obtain the variables of other projects: // {ProjectName.Properties. *}
+- Obtain the value of the current environment variable ${Env(env)}, for example, `${Env(SecretId)}`.
+- The : `{File(path)}` variable is used to obtain the external document. For example, `${File(./path)}`
+- Obtain Global variables: variable `{Global.*}`
+- Obtain the variables of other projects: `{ProjectName.Properties.*}`
 - Retrieve result variables from other projects in the Yaml format: See {ProjectName.Output. *}
 
 If too many projects are included in a Yaml file, the deployment sequence is also analyzed by default:
