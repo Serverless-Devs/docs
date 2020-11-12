@@ -1,4 +1,4 @@
-# Welcome to Serverless Devs.
+# Welcome to Serverless Devs
 
 <div align=center> <img src="https://images.serverlessfans.com/devs-github/logo.jpg" width="100%"/> </div>
 
