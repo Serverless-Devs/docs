@@ -15,9 +15,9 @@ Serverless Devs is an open-source and Serverless developer platform, dedicated t
 
 Serverless DevTools include Serverless DevTools and Serverless Devs App Store(Serverless Application Center):
 
-&bull; **Serverless Devs Tool **is a tool that can double the development and O & M efficiency for Serverless developers. By using this tool, developers can perform application creation, project development, testing, release, and deployment tasks in a simpler and faster manner, enabling end-to-end management of projects.
+**Serverless Devs Tool** is a tool that can double the development and O & M efficiency for Serverless developers. By using this tool, developers can perform application creation, project development, testing, release, and deployment tasks in a simpler and faster manner, enabling end-to-end management of projects.
 
-&bull; **Serverless Devs App Store **web + is an application center that integrates online search, one-click deployment, and visual editing of Serverless Applications. The application center contains a large number of production-level project and case templates. You can select from these templates and deploy each project to the specified Apsara stack platform with one click.
+**Serverless Devs App Store** web + is an application center that integrates online search, one-click deployment, and visual editing of Serverless Applications. The application center contains a large number of production-level project and case templates. You can select from these templates and deploy each project to the specified Apsara stack platform with one click.
 
 ## Project advantages
 
