@@ -21,41 +21,41 @@
         \/     \/                 \/                \/     \/     \/          \/     \/         \/ 
 ```
 
-* [Project Introduction ](/docs/en/serverless_devs_introduce.md)
+* [Introduction ](/docs/en/serverless_devs_introduce.md)
 * [Quickstart ](/docs/en/quick_start.md)
 * CLI
    * Getting started
       * [Quickstart ](/docs/en/tool/quick_start.md)
-      * [Installation Instructions ](/docs/en/tool/install.md)
+      * [Installation ](/docs/en/tool/install.md)
       * [Account configuration ](/docs/en/tool/access_config.md)
       * [Configure Yaml ](/docs/en/tool/yaml_format.md)
    * Instruction document
-      * [Config directive ](/docs/en/tool/commands/config.md)
-      * [Init commands ](/docs/en/tool/commands/init.md)
-      * [Search instruction ](/docs/en/tool/commands/search.md)
-      * [Set instruction ](/docs/en/tool/commands/set.md)
-      * [Platform instructions ](/docs/en/tool/commands/platform.md)
-      * [GUI directives ](/docs/en/tool/commands/gui.md)
-      * [Extensive instruction ](/docs/en/tool/commands/more_command.md)
-* Go to Application Center
+      * [Config ](/docs/en/tool/commands/config.md)
+      * [Init ](/docs/en/tool/commands/init.md)
+      * [Search ](/docs/en/tool/commands/search.md)
+      * [Set ](/docs/en/tool/commands/set.md)
+      * [Platform ](/docs/en/tool/commands/platform.md)
+      * [GUI ](/docs/en/tool/commands/gui.md)
+      * [Extensive ](/docs/en/tool/commands/more_command.md)
+* Application Center
    * Getting started
       * [Quickstart ](/docs/en/app-store/quick_start.md)
-      * [Application Center ](/docs/en/app-store/serverless_devs_app_store_introduce.md)
-      * [Package Summary ](/docs/en/app-store/package_awesome.md)
-   * awesome application center edition
+      * [Introduce ](/docs/en/app-store/serverless_devs_app_store_introduce.md)
+      * [Package awesome ](/docs/en/app-store/package_awesome.md)
+   * Application awesome
       * [Components ](https://github.com/Serverless-Devs-Awesome/Components)
-      * [Application List ](https://github.com/Serverless-Devs-Awesome/Applications)
-      * [Plug-ins ](https://github.com/Serverless-Devs-Awesome/Plugins)
+      * [Application](https://github.com/Serverless-Devs-Awesome/Applications)
+      * [Plugins ](https://github.com/Serverless-Devs-Awesome/Plugins)
 * References
-   * [The concept of Package ](/docs/en/others/package/package_type.md)
-   * [Package Development Guide ](/docs/en/others/package/package_dev.md)
-   * Package Development documentation
-      * [Component Development ](/docs/en/others/package/devs_docs/component.md)
-      * [Application Development ](/docs/en/others/package/devs_docs/application.md)
-      * [Plugin Development ](/docs/en/others/package/devs_docs/plugin.md)
+   * [Package concept ](/docs/en/others/package/package_type.md)
+   * [Package Dev Guide ](/docs/en/others/package/package_dev.md)
+   * Package Dev documentation
+      * [Component ](/docs/en/others/package/devs_docs/component.md)
+      * [Application ](/docs/en/others/package/devs_docs/application.md)
+      * [Plugin ](/docs/en/others/package/devs_docs/plugin.md)
    * Method for obtaining the key (certificate) of a cloud vendor
       * [Alibaba Cloud ](/docs/en/others/access/alibaba_cloud.md)
-      * [Baiduyun ](/docs/en/others/access/baidu_cloud.md)
+      * [Baidu Cloud ](/docs/en/others/access/baidu_cloud.md)
       * [AWS ](/docs/en/others/access/aws.md)
       * [Azure ](/docs/en/others/access/azure.md)
       * [Google Cloud ](/docs/en/others/access/google_cloud.md)
