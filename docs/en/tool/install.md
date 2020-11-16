@@ -2,7 +2,13 @@
 
 This topic describes how to install the Serverless Devs Tool.
 
-- [Npm based installation ](#Npm-based-installation)
+## Quick installation
+
+only for Mac/Linux
+
+```bash
+curl -o- -L http://cli.so/install.sh | bash
+```
 
 ## Npm based installation
 
@@ -10,7 +16,7 @@ npm package-based installation: this installation mode is suitable for Windows, 
 
 Run the following command to install the Serverless Devs Tool on Windows, Mac, or Linux.
 
-```
+```bash
 $ npm install @serverless-devs/s -g
 ```
 
@@ -24,4 +30,3 @@ After the installation is completed, run the s command in the control terminal t
 ```
 s -v
 ```
-
