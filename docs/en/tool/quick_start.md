@@ -12,7 +12,7 @@
 
 ## Graphic tutorial
 
-1. Use `npm install -g @ serverless-devs` to install the tool:
+1. Use `npm install -g @serverless-devs/s` to install the tool:
 ![](https://images.serverlessfans.com/s-tool/demo/tool-demo-1.png)
 
 2. After the installation is complete, you can run config add: s to configure keys for different cloud vendors as prompted.
