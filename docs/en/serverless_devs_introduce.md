@@ -56,11 +56,23 @@ You can use the command line tool or application center to initially create a pr
 
 ## Fast entry installation and use
 
+### Quick installation
+
+Only for Mac/Linux
+
+```bash
+curl -o- -L http://cli.so/install.sh | bash
+```
+
+### Npm based installation
+
+For Mac/Linux/Windows
+
 npm package-based installation: this installation mode is suitable for Windows, Mac, and Linux platforms that already have npm pre-installed.
 
 Run the following command to install the Serverless Devs Tool on Windows, Mac, or Linux.
 
-```shell script
+```bash
 $ npm install @serverless-devs/s -g
 ```
 
