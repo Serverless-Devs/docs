@@ -49,11 +49,13 @@ Config指令是用来配置账号信息的指令。确切来说，在Serverless 
 针对不同云厂商，这里有不同的设置：
 
 ```
- alibaba: AccountID, AccessKeyID, AccessKeySecret
- aws: AccessKeyID, SecretAccessKey
- baidu: AccessKeyID, SecretAccessKey
- huawei: AccessKey, SecretKey
- tencent: AccountID, SecretID, SecretKey
+  alibaba: AccountID, AccessKeyID, AccessKeySecret,
+  aws: AccessKeyID, SecretAccessKey,
+  baidu: AccessKeyID, SecretAccessKey,
+  huawei: AccessKeyID, SecretAccessKey,
+  azure: KeyVaultName, TenantID, ClientID, ClientSecret,
+  tencent: AccountID, SecretID, SecretKey,
+  google: PrivateKeyData,
 ```
 
 ### 其他配置密钥方法
@@ -147,11 +149,13 @@ s config delete -p alibaba -a default
 为了给大家更多便利，在此处也增加了命令式修改方法，即在提供Provider（云厂商）和Alias（别名）的同时，指定其他任何对应信息：
 
 ```
- alibaba: AccountID, AccessKeyID, AccessKeySecret
- aws: AccessKeyID, SecretAccessKey
- baidu: AccessKeyID, SecretAccessKey
- huawei: AccessKey, SecretKey
- tencent: AccountID, SecretID, SecretKey
+  alibaba: AccountID, AccessKeyID, AccessKeySecret,
+  aws: AccessKeyID, SecretAccessKey,
+  baidu: AccessKeyID, SecretAccessKey,
+  huawei: AccessKeyID, SecretAccessKey,
+  azure: KeyVaultName, TenantID, ClientID, ClientSecret,
+  tencent: AccountID, SecretID, SecretKey,
+  google: PrivateKeyData,
 ```
 
 系统会修改对应内容，例如，将上述图片中的 百度云 demo 中的`AccessKeyID`进行修改：

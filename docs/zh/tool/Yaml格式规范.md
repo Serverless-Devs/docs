@@ -1,6 +1,16 @@
 # Yaml配置相关
 
-Serverless Devs Tool的Yaml文件配置基本格式是：
+Serverless Devs Tool的默认资源配置获取顺序：
+```
+s.yaml
+s.yml
+s.json
+template.yaml
+template.yml
+template.json
+```
+
+Yaml文件配置基本格式是：
 
 ```yaml
 ProjectName:
@@ -182,3 +192,5 @@ WebFronted:
 5. 部署WebBackend-website
 6. 部署WebFronted的插件：
     - TestPluginEnd
+    
+额外说明：如果在执行项目的时候，想跳过行为描述，可以使用：`--skip-extends`参数。

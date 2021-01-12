@@ -126,7 +126,7 @@ module.exports = MyComponent
 
 这里要额外注意，所有对外暴露的方法，会默认有一个入参，参数格式：
 
-```json
+```
 {
     "Command": "deploy", // 用户使用的方法名称
     "Project": {
@@ -365,9 +365,10 @@ HexoComponent:
     CodeUri: './src'
 ```
 
-## 发布组件
+#### 获取密钥信息
 
-发布组件可以参考[Package开发指南](../Package开发指南.md)
+通过`await this.credentials(inputs)`可获取密钥信息。
+
 
 ## 额外说明
 
