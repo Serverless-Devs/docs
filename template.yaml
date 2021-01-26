@@ -6,7 +6,7 @@ global: # [全局变量，提供给执行主体使用]
   region: cn-beijing
 
 services:
-  frontend: #  这里frontend 表示应用的名称  [执行主体，描述应用行为]
+  nextjs-portal: #  这里frontend 表示应用的名称  [执行主体，描述应用行为]
     component: vue-component
     inputs: #  命名: configs, properties???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
       region: ${global.region}
