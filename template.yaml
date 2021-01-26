@@ -24,7 +24,7 @@ services:
         - run: s clean #  这个表示为具体的命令，用run是不是更好一些？ [Hook 类的扩展通常是指令类的执行]
           path: ./frontend_src
 
-  assets: #  assets
+  assets: #  assets with Cache-Control
     component: static
     props: #  命名: configs, properties??? with???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
       cache-control: "public max-age=xxx"
