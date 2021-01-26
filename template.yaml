@@ -1,35 +1,42 @@
+version: 1.0.0    #  S specification version
 name: FullStack       #  [项目名称，全局新增，非必填]
 provider: alibaba     #  [供应商描述 ，全局新增，非必填]
-access: release       #  [秘钥别名，全局新增，非必填]
+access: xxx-account1  #  [秘钥别名，全局新增，非必填]
 
 global: # [全局变量，提供给执行主体使用]
-  region: cn-beijing
+  logo: https://image.aliyun.com/xxxx.png
+  domain: xxxx.yyy.com
 
 services:
-  nextjs-portal: #  这里frontend 表示应用的名称  [执行主体，描述应用行为]
-    component:
-      name: vue-component
-      inputs: #  命名: configs, properties??? with???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
-        region: ${global.region}
-        src: ./frontend_src
-        url: ${backend.output.url}
-    extends: # 命名： 是不是hooks更好点？？？ 如bootstrap前执行，deploy前执行  [执行扩展，在组件执行前/后 执行的逻辑或指令]
-      - phase: pre-deploy  # 这里调整为array是否好点， deploy阶段的加载的钩子可能有多个
-        run: s exec -- build #  这个表示为具体的命令，用run是不是更好一些？ [Hook 类的扩展通常是指令类的执行]
-        path: ./frontend_src
-        pre: true # 通常就两个阶段， pre和post， 那么调整为 sequence: pre 或 post 比较好  [扩展的执行顺序在执行组件逻辑之前]
-      - phase: pre-deploy # [Plugin 类的扩展通常是更细的代码逻辑]
-        plugin: test
-        pre: false # [扩展的执行顺序在执行组件逻辑之后]
+  nextjs-portal: #  表示服务的名称  [执行主体，描述应用行为]
+    provider: alibaba     #  [供应商描述 ，全局新增，非必填]
+    access: xxx-account1  #  [秘钥别名，全局新增，非必填]
+    component: vue-component
+    props: #  命名: configs, properties??? with???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
+      src: ./frontend_src
+      url: ${backend.output.url}
+    actions: # 命名： 是不是hooks更好点？？？ 如bootstrap前执行，deploy前执行  [执行扩展，在组件执行前/后 执行的逻辑或指令]
+      pre-deploy:
+        - run: s exec -- publish
+          path: ./backend_src
+        - plugin: plugin-name
+      post-deploy:
+        - run: s clean #  这个表示为具体的命令，用run是不是更好一些？ [Hook 类的扩展通常是指令类的执行]
+          path: ./frontend_src
 
+  assets: #  assets
+    component: static
+    props: #  命名: configs, properties??? with???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
+      cache-control: "public max-age=xxx"
+      www: "./public"
 
-backend:
-  component: express-component
-  extends:
-    deploy:
-      - hook: s exec -- publish
-        path: ./backend_src
-        pre: false
-  inputs:
-    region: ${global.Region}
-    src: ./backend_src
+  express-blog: #  表示服务的名称  [执行主体，描述应用行为]
+    component: express
+    props: #  命名: configs, properties??? with???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
+      app: ./express-blog
+      url: ${backend.output.url}
+    actions: # 命名： 是不是hooks更好点？？？ 如bootstrap前执行，deploy前执行  [执行扩展，在组件执行前/后 执行的逻辑或指令]
+      pre-deploy:
+        - run: npm run build
+          path: ./express-blog
+
