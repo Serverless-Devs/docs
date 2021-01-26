@@ -13,12 +13,13 @@ services:
       src: ./frontend_src
       url: ${backend.output.url}
     extends: # 命名： 是不是hooks更好点？？？ 如bootstrap前执行，deploy前执行  [执行扩展，在组件执行前/后 执行的逻辑或指令]
-      deploy:  # 这里调整为array是否好点， deploy阶段的加载的钩子可能有多个
-        - hook: s exec -- build #  这个表示为具体的命令，用run是不是更好一些？ [Hook 类的扩展通常是指令类的执行]
-          path: ./frontend_src
-          pre: true # 通常就两个阶段， pre和post， 那么调整为 sequence: pre 或 post 比较好  [扩展的执行顺序在执行组件逻辑之前]
-        - plugin: test # [Plugin 类的扩展通常是更细的代码逻辑]
-          pre: false # [扩展的执行顺序在执行组件逻辑之后]
+      - phase: pre-deploy  # 这里调整为array是否好点， deploy阶段的加载的钩子可能有多个
+        run: s exec -- build #  这个表示为具体的命令，用run是不是更好一些？ [Hook 类的扩展通常是指令类的执行]
+        path: ./frontend_src
+        pre: true # 通常就两个阶段， pre和post， 那么调整为 sequence: pre 或 post 比较好  [扩展的执行顺序在执行组件逻辑之前]
+      - phase: pre-deploy # [Plugin 类的扩展通常是更细的代码逻辑]
+        plugin: test
+        pre: false # [扩展的执行顺序在执行组件逻辑之后]
 
 
 backend:
