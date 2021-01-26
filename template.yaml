@@ -1,33 +1,34 @@
-Name: FullStack       #  [项目名称，全局新增，非必填]
-Provider: Alibaba     #  [供应商描述 ，全局新增，非必填]
-Access: release       #  [秘钥别名，全局新增，非必填]
+name: FullStack       #  [项目名称，全局新增，非必填]
+provider: alibaba     #  [供应商描述 ，全局新增，非必填]
+access: release       #  [秘钥别名，全局新增，非必填]
 
-Global: # [全局变量，提供给执行主体使用]
-  Region: cn-beijing
+global: # [全局变量，提供给执行主体使用]
+  region: cn-beijing
 
-Frontend:   # [执行主体，描述应用行为]
-  Provider: Alibaba  # [供应商描述，跟秘钥别名构成秘钥主键]
-  Access: release # [秘钥别名，跟供应商描述构成秘钥主键，填写后覆盖全局，跟全局合起来唯一]
-  Component: vue-component # [执行组件，具体的应用处理逻辑]
-  Extends:  # [执行扩展，在组件执行前/后 执行的逻辑或指令]
+frontend:   # [执行主体，描述应用行为]
+  provider: alibaba  # [供应商描述，跟秘钥别名构成秘钥主键]
+  access: release # [秘钥别名，跟供应商描述构成秘钥主键，填写后覆盖全局，跟全局合起来唯一]
+  component: vue-component # [执行组件，具体的应用处理逻辑]
+  extends:  # [执行扩展，在组件执行前/后 执行的逻辑或指令]
     deploy:
-      - Hook: s exec -- build # [Hook 类的扩展通常是指令类的执行]
-        Path: ./frontend_src
-        Pre: true # [扩展的执行顺序在执行组件逻辑之前]
-      - Plugin: test # [Plugin 类的扩展通常是更细的代码逻辑]
-        Pre: false # [扩展的执行顺序在执行组件逻辑之后]
-  Properties: # [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
-    Region: ${Global.Region}
-    Src: ./frontend_src
-    Url: ${Backend.Output.Url}
+      - hook: s exec -- build # [Hook 类的扩展通常是指令类的执行]
+        path: ./frontend_src
+        pre: true # [扩展的执行顺序在执行组件逻辑之前]
+      - plugin: test # [Plugin 类的扩展通常是更细的代码逻辑]
+        pre: false # [扩展的执行顺序在执行组件逻辑之后]
+  inputs: # [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
+    region: ${global.region}
+    src: ./frontend_src
+    url: ${backend.output.url}
 
-Backend:
-  Component: express-component
-  Extends:
+
+backend:
+  component: express-component
+  extends:
     deploy:
-      - Hook: s exec -- publish
-        Path: ./backend_src
-        Pre: false
-  Properties:
-    Region: ${Global.Region}
-    Src: ./backend_src
+      - hook: s exec -- publish
+        path: ./backend_src
+        pre: false
+  inputs:
+    region: ${global.Region}
+    src: ./backend_src
