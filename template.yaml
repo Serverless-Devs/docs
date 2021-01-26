@@ -7,12 +7,11 @@ global: # [全局变量，提供给执行主体使用]
 
 services:
   frontend: #  这里frontend 表示应用的名称  [执行主体，描述应用行为]
-    component:
-      name: vue-component # [执行组件，具体的应用处理逻辑]
-      inputs: #  命名: properties???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
-        region: ${global.region}
-        src: ./frontend_src
-        url: ${backend.output.url}
+    component: vue-component
+    inputs: #  命名: configs, properties???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
+      region: ${global.region}
+      src: ./frontend_src
+      url: ${backend.output.url}
     extends: # 命名： 是不是hooks更好点？？？ 如bootstrap前执行，deploy前执行  [执行扩展，在组件执行前/后 执行的逻辑或指令]
       deploy:  # 这里调整为array是否好点， deploy阶段的加载的钩子可能有多个
         - hook: s exec -- build #  这个表示为具体的命令，用run是不是更好一些？ [Hook 类的扩展通常是指令类的执行]
