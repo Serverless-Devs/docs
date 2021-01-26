@@ -48,8 +48,10 @@ services:
           value: ${assets.outPut.url}
         - route: /
           value: ${nextjs-portal.outPut.url}
+          index: index.html
         - route: ~/portal
           value: ${nextjs-portal.outPut.url}
+          inex: index.html
         - route: ~/blog
           value: ${express-blog.outPut.url}
 
