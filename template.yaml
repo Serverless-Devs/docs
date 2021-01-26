@@ -1,52 +1,55 @@
-version: 1.0.0    #  S specification version
-name: FullStack       #  [项目名称，全局新增，非必填]
-provider: alibaba     #  [供应商描述 ，全局新增，非必填]
-access: xxx-account1  #  [秘钥别名，全局新增，非必填]
+version: 1.0.0    #  S命令行YAML规范版本
+name: FullStack       #  项目名称
+provider: alibaba     #  云厂商名称
+access: xxx-account1  #  秘钥别名
 
-global: # [全局变量，提供给执行主体使用]
+vars: # [全局变量，提供给各个服务使用]
   logo: https://image.aliyun.com/xxxx.png
   domain: xxxx.yyy.com
 
 services:
-  nextjs-portal: #  表示服务的名称  [执行主体，描述应用行为]
-    provider: alibaba     #  [供应商描述 ，全局新增，非必填]
-    access: xxx-account1  #  [秘钥别名，全局新增，非必填]
-    component: vue-component
-    props: #  命名: configs, properties??? with???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
+  nextjs-portal: #  服务名称
+    provider: alibaba     # 云厂商名称，如果和项目的provider相同，可省略
+    access: xxx-account1  #  秘钥别名，如果和项目的access相同，可省略
+    component: vue-component  # 组件名称
+    props: #  组件的属性值
       src: ./frontend_src
       url: ${backend.output.url}
-    actions: # 命名： 是不是hooks更好点？？？ 如bootstrap前执行，deploy前执行  [执行扩展，在组件执行前/后 执行的逻辑或指令]
-      pre-deploy:
-        - run: s exec -- publish
-          path: ./backend_src
-        - plugin: plugin-name
-      post-deploy:
-        - run: s clean #  这个表示为具体的命令，用run是不是更好一些？ [Hook 类的扩展通常是指令类的执行]
+    actions: # 自定义执行逻辑
+      pre-deploy: # 在deploy之前运行
+        - run: s exec -- publish  # 要运行的命令行
+          path: ./backend_src # 命令行运行的路径
+        - plugin: plugin-name # 要运行的plugin名称
+      post-deploy: # 在deploy之后运行
+        - run: s clean
           path: ./frontend_src
 
-  assets: #  assets with Cache-Control
+  assets:
     component: static
-    props: #  命名: configs, properties??? with???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
+    props:
       cache-control: "public max-age=xxx"
       www: "./public"
 
-  express-blog: #  表示服务的名称  [执行主体，描述应用行为]
+  express-blog:
     component: express
-    props: #  命名: configs, properties??? with???  Component Props 已经是约定俗成的叫法啦 [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
+    props:
       app: ./express-blog
-      url: ${backend.output.url}
-    actions: # 命名： 是不是hooks更好点？？？ 如bootstrap前执行，deploy前执行  [执行扩展，在组件执行前/后 执行的逻辑或指令]
+      url: ${domain}
+    actions:
       pre-deploy:
         - run: npm run build
           path: ./express-blog
+
   gateway:
-    component: serverless-gateway
+    component: serverless-gateway # 路由组件：HTTP URL和服务之间的映射规则
     props:
       routes:
-        - route: ~/static
+        - route: ~/assets
           value: ${assets.outPut.url}
+        - route: /
+          value: ${nextjs-portal.outPut.url}
         - route: ~/portal
           value: ${nextjs-portal.outPut.url}
-        - route: ~/api
+        - route: ~/blog
           value: ${express-blog.outPut.url}
 
