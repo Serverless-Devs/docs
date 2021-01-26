@@ -1,0 +1,31 @@
+Name: FullStack       #  [全局新增，非必填]
+Provider: Alibaba     #  [全局新增，非必填]
+Access: release       #  [全局新增，非必填]
+
+Global:
+  Region: cn-beijing
+
+Frontend:
+  Provider: Alibaba  # 填写后覆盖全局，跟全局合起来唯一
+  Access: release # 填写后覆盖全局，跟全局合起来唯一
+  Component: vue-component
+  Extends:
+    deploy:
+      - Hook: s exec -- build
+        Path: ./frontend_src
+        Pre: true
+  Properties:
+    Region: ${Global.Region}
+    Src: ./frontend_src
+    Url: ${Backend.Output.Url}
+
+Backend:
+  Component: express-component
+  Extends:
+    deploy:
+      - Hook: s exec -- publish
+        Path: ./backend_src
+        Pre: false
+  Properties:
+    Region: ${Global.Region}
+    Src: ./backend_src
