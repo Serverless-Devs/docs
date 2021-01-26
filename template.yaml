@@ -16,7 +16,7 @@ Frontend:   # [执行主体，描述应用行为]
         Pre: true # [扩展的执行顺序在执行组件逻辑之前]
       - Plugin: test # [Plugin 类的扩展通常是更细的代码逻辑]
         Pre: false # [扩展的执行顺序在执行组件逻辑之后]
-  Properties: # [执行组件的入参，配合执行苗药传递给执行组件处理云产品相关的逻辑]
+  Properties: # [执行组件的入参，配合执行秘钥传递给执行组件处理云产品相关的逻辑]
     Region: ${Global.Region}
     Src: ./frontend_src
     Url: ${Backend.Output.Url}
