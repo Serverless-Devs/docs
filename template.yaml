@@ -17,7 +17,7 @@ services:
       deploy:
         - hook: s exec -- build #  这个表示为具体的命令，用run是不是更好一些？ [Hook 类的扩展通常是指令类的执行]
           path: ./frontend_src
-          pre: true # [扩展的执行顺序在执行组件逻辑之前]
+          pre: true # 通常就两个阶段， pre和post， 那么调整为 sequence: pre 或 post 比较好  [扩展的执行顺序在执行组件逻辑之前]
         - plugin: test # [Plugin 类的扩展通常是更细的代码逻辑]
           pre: false # [扩展的执行顺序在执行组件逻辑之后]
 
