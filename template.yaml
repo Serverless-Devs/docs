@@ -39,4 +39,14 @@ services:
       pre-deploy:
         - run: npm run build
           path: ./express-blog
+  gateway:
+    component: serverless-gateway
+    props:
+      routes:
+        - route: ~/static
+          value: ${assets.outPut.url}
+        - route: ~/portal
+          value: ${nextjs-portal.outPut.url}
+        - route: ~/api
+          value: ${express-blog.outPut.url}
 
