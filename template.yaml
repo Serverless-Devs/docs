@@ -44,14 +44,14 @@ services:
     component: serverless-gateway # 路由组件：HTTP URL和服务之间的映射规则
     props:
       routes:
-        - route: ~/assets
+        - route: /~assets
           value: ${assets.outPut.url}
         - route: /
           value: ${nextjs-portal.outPut.url}
           index: index.html
-        - route: ~/portal
+        - route: /~portal
           value: ${nextjs-portal.outPut.url}
           inex: index.html
-        - route: ~/blog
+        - route: /~blog
           value: ${express-blog.outPut.url}
 
