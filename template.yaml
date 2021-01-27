@@ -27,7 +27,7 @@ services:
   assets:
     component: static
     props:
-      cache-control: "public max-age=xxx"
+      cache-control: "public, max-age=604800, immutable"
       www: "./public"
 
   express-blog:
