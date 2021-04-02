@@ -122,7 +122,7 @@ s config add
 
 ? Please select a provider: Alibaba Cloud (alibaba)
 
-Config document: https://www.github.com/serverless-devs/docs
+Config document: https://github.com/Serverless-Devs/docs/blob/master/zh/others/provider-config
 
 ? AccountID **********
 ? AccessKeyID **********

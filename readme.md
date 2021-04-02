@@ -33,8 +33,8 @@ Serverless Devs 是一个组件化与插件化的 Serverless 开发者平台，�
 
 ## 帮助文档
 
-- [安装文档](./install.md)
-- [命令行指令文档](./command.md)
-- [Yaml规范文档](./yaml.md)
-- [Package开发者文档](./dev.md)
-- [源文档](./registry.md)
+- [安装文档](./zh/install.md)
+- [命令行指令文档](./zh/command.md)
+- [Yaml规范文档](./zh/yaml.md)
+- [Package开发者文档](./zh/dev.md)
+- [源文档](./zh/registry.md)
