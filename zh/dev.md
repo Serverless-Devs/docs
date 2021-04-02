@@ -24,7 +24,22 @@ Serverless Devs是组件化开发者工具，是一个通过社区共同建设�
 
 好了，这样一个简单的表格，可能很难描述清楚，那么我们就用一个实际的例子来表示：
 
-![](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-1.jpg)
+```yaml
+# 完整的是一个应用
+edition: 1.0.0 
+name: FullStack 
+access: xxx-account1
+
+services:
+  nextjs-portal:
+    component: fc # 这个fc是一个组件
+    props:
+      src: ./frontend_src
+      url: ${backend.output.url}
+    actions:
+      pre-deploy:
+        - plugin: plugin-name # 这是一个插件，这执行deploy之前会执行
+```
 
 在这个Yaml中，我们可以看到，这里有一个项目是`Projectname`，这个项目依赖了组件`stest`，在项目执行`deploy`方法（这个方法是`stest`组件自己定义的）之前，要执行一个叫做`stest_plugin`的组件。其组件和插件以及Yaml等关系如下：
 
