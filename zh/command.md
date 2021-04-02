@@ -350,32 +350,11 @@ Options:
   -h, --help    Display help for command
 
 Commands:
-  color         Control color output
   language      Output language switch
   analysis      Upload your usage habits to help us improve our products
   registry      Config registry for Serverless Devs
 ```
 
-### set color 命令
-
-配置输出颜色，通过`-h/--help`可以看到效果：
-
-```shell script
-$ s set color -h
-
-Usage: s set color [options]
-
-Control color output.
-
-     Example:
-        # Default color output：
-          $ s set color enable
-        # System color output: 
-          $ s set color disable
-
-Options:
-  -h, --help  Display help for command
-```
 
 ### set language 命令
 
