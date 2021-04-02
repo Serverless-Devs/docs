@@ -124,13 +124,16 @@ Service: # 使用的服务
 例如，用户的Yaml格式为：
 
 ```yaml
-HexoComponent:
-  Component: hexo
-  Provider: alibaba
-  Access: release
-  Properties:
-    Region: 'cn-hangzhou'
-    CodeUri: './src'
+edition: 1.0.0        #  命令行YAML规范版本，遵循语义化版本（Semantic Versioning）规范
+name: FullStack       #  项目名称
+access: xxx-account1  #  秘钥别名
+
+services:
+  HexoComponent:
+    component: hexo
+    props:
+      region: 'cn-hangzhou'
+      codeUri: './src'
 ```
 
 当用户执行`s deploy mytest -a -b abc`，此时，您的`deploy`方法，收到的`inputs`参数实际上是：
@@ -217,6 +220,18 @@ Category: 分类 # 基础云服务/Web框架/Web应用/人工智能/音视频处
 
 发布Package的方法是非常简单的，当您完成了项目开发，您可以将代码推动到Github，或者放入所配置的私有源即可
 
-> 不发布package情况下组件的使用方法：
-> 您如果开发完成项目，不想直接对外开放，仅是想自己使用，您可以通过直接引入项目绝对路径的方法使用。例如：
-> ![](https://images.serverlessfans.com/s-tool/zh/how-to-dev-package-2.jpg)
+不发布package情况下组件的使用方法：    
+您如果开发完成项目，不想直接对外开放，仅是想自己使用，您可以通过直接引入项目绝对路径的方法使用。例如：   
+  
+```shell script
+edition: 1.0.0        #  命令行YAML规范版本，遵循语义化版本（Semantic Versioning）规范
+name: FullStack       #  项目名称
+access: xxx-account1  #  秘钥别名
+
+services:
+  nextjs-portal: #  服务名称
+    component: ./my-full-stack-component-path
+    props: #  组件的属性值
+      src: ./frontend_src
+      url: ${backend.output.url}
+```

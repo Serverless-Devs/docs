@@ -15,7 +15,6 @@ vars: # [全局变量，提供给各个服务使用]
 
 services:
   nextjs-portal: #  服务名称
-    provider: alibaba     # 云厂商名称，如果和项目的provider相同，可省略
     access: xxx-account1  #  秘钥别名，如果和项目的access相同，可省略
     component: vue-component  # 组件名称
     props: #  组件的属性值
