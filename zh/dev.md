@@ -204,7 +204,7 @@ Properties:
     ```Example, Default```    
     Type可以是String类型，也可以是List类型，取值：    
     ```String, Number, List, Enum, Struct, Boolean, Null, Any```    
-    负责类型可以是：`<数据类型>List`   
+    负责类型可以是：`List<数据类型>`   
     当Type是List类型时，可以针对不同的元素做别名：`数据类型[别名]`
     
 ##### readme.md
