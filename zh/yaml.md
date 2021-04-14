@@ -64,11 +64,11 @@ services:
 
 Yaml支持的多种变量格式如下：
 
-- 获取当前机器中的环境变量：${Env(环境变量)}，例如${Env(SecretId)}
-- 获取外部文档的变量：${File(路径)}，例如${File(./path)}
-- 获取全局变量：${Global.*}
-- 获取其他项目的变量：${ProjectName.Properties.*}
-- 获取Yaml中其他项目的结果变量：${ProjectName.Output.*}
+- 获取当前机器中的环境变量：${env(环境变量)}，例如${env(secretId)}
+- 获取外部文档的变量：${file(路径)}，例如${file(./path)}
+- 获取全局变量：${vars.*}
+- 获取其他项目的变量：${projectName.props.*}
+- 获取Yaml中其他项目的结果变量：${projectName.output.*}
 
 当然，如果一个Yaml中有过多的项目，系统也会默认分析部署顺序：
 1. 分析项目中的依赖关系
