@@ -60,3 +60,17 @@ services:
         - route: /~blog
           value: ${express-blog.outPut.url}
 ```
+
+
+Yaml支持的多种变量格式如下：
+
+- 获取当前机器中的环境变量：${Env(环境变量)}，例如${Env(SecretId)}
+- 获取外部文档的变量：${File(路径)}，例如${File(./path)}
+- 获取全局变量：${Global.*}
+- 获取其他项目的变量：${ProjectName.Properties.*}
+- 获取Yaml中其他项目的结果变量：${ProjectName.Output.*}
+
+当然，如果一个Yaml中有过多的项目，系统也会默认分析部署顺序：
+1. 分析项目中的依赖关系
+2. 有依赖关系的按照依赖关系从前到后部署，无依赖关系的按Yaml配置的从上到下部署
+3. 插件分析，按照配的从上到下部署（pre为true就是之前部署，pre为false就是组件部署之后再部署）
