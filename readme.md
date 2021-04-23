@@ -4,7 +4,7 @@
 
 <p align="center">
   <span>像使用手机一样使用Serverless</span><br>
-  <span> <a href="./zh/readme.md">中文文档</a> ｜ <a href="./en/readme.md">English</a> </span>
+  <span> <a href="./zh/readme.md">中文文档</a> ｜English(It's coming) </span>
 </p>
 
 ## 项目简介
@@ -38,3 +38,22 @@ Serverless Devs 是一个组件化与插件化的 Serverless 开发者平台，�
 - [Yaml规范文档](./zh/yaml.md)
 - [Package开发者文档](./zh/dev.md)
 - [源文档](./zh/registry.md)
+
+## 相关资源
+
+- 应用列表：https://github.com/devsapp/Application-Awesome
+- 组件列表：https://github.com/devsapp/Component-Awesome
+
+## 快速体验
+
+### 零基础部署一个博客系统
+
+- 下载命令行工具：npm install -g @serverless-devs/s
+- 初始化一个模版项目：s init devsapp/start-zblog
+- 进入项目后部署项目：cd start-zblog && s deploy
+
+### 零基础部署一个企业官网
+
+- 下载命令行工具：npm install -g @serverless-devs/s
+- 初始化一个模版项目：s init devsapp/start-metinfo
+- 进入项目后部署项目：cd start-metinfo && s deploy
