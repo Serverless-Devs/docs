@@ -2,11 +2,18 @@
 
 ## 通过命令行工具安装
 
-通过 npm 包管理安装：适用于已经预装了 npm 的 Windows、Mac、Linux 平台。在 Windows、Mac、Linux 平台执行以下命令安装 Serverless Devs Tool工具。
+通过 [npm](https://www.npmjs.com/) 包管理安装：适用于已经预装了 npm 的 Windows、Mac、Linux 平台。在 Windows、Mac、Linux 平台执行以下命令安装 Serverless Devs Tool工具。
 
 ```shell script
 $ npm install @serverless-devs/s -g
 ```
+或者 通过 [yarn](https://yarnpkg.com/) 进行安装
+
+```shell script
+$ yarn global add @serverless-devs/s
+```
+
+
 
 > **说明**:   
 > - 如果在 Linux 或 MacOS 下执行该命令报错且报错信息为 Error: EACCES: permission denied，请执行命令 sudo npm install @serverless-devs/s -g。   
