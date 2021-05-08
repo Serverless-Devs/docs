@@ -1,6 +1,6 @@
 # Serverless Devs Cli 帮助文档
 
-<div align=center> <img src="https://images.devsapp.com/devs-github/logo.jpg" width="100%"/> </div>
+<div align=center> <img src="https://images.devsapp.cn/devs-github/logo.jpg" width="100%"/> </div>
 
 <p align="center">
   <span>像使用手机一样使用Serverless</span><br>
