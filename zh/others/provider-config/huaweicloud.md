@@ -3,11 +3,11 @@
 华为云官网：https://www.huaweicloud.com/       
 
 - 打开 [华为云官网](https://www.huaweicloud.com/) 进行登录，登录后选择右上角【我的凭证】再选择左侧的 【访问密钥】：
-  ![获取密钥页面](https://images.serverlessfans.com/access/huawei-page.jpg)
+  ![获取密钥页面](https://images.devsapp.cn/access/huawei-page.jpg)
 - 点击新增访问密钥，会弹出提示框进行相关安全验证，通过之后可以看到：
-  ![](https://images.serverlessfans.com/access/huawei-download.jpg)
+  ![](https://images.devsapp.cn/access/huawei-download.jpg)
 - 下载之后可以看到自己的密钥信息：
-  ![](https://images.serverlessfans.com/access/huawei-access.jpg)
+  ![](https://images.devsapp.cn/access/huawei-access.jpg)
 
 > 如果访问密钥泄露，会带来数据泄露风险，且每个访问密钥仅能下载一次，为了账号安全性，建议您定期更换并妥善保存访问密钥。
 

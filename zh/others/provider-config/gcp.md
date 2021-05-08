@@ -3,13 +3,13 @@
 Google Cloud官网：https://cloud.google.com       
 
 - 打开 [Google Cloud官网](https://cloud.google.com) 进行登录，选择对应项目，进入到项目中：
-  ![获取密钥页面](https://images.serverlessfans.com/access/google-console.jpg)
+  ![获取密钥页面](https://images.devsapp.cn/access/google-console.jpg)
 - 点击左侧的【服务账号】：
-  ![](https://images.serverlessfans.com/access/google-service.jpg)
+  ![](https://images.devsapp.cn/access/google-service.jpg)
 - 再点击上面的【创建服务账号】：
-  ![](https://images.serverlessfans.com/access/google-add.jpg)
+  ![](https://images.devsapp.cn/access/google-add.jpg)
 - 创建完成会下载对应文件】：
-  ![](https://images.serverlessfans.com/access/google-access.jpg)
+  ![](https://images.devsapp.cn/access/google-access.jpg)
 - 将该文件存储到本地，并将存储的绝对路径配置到`s`工具所需的`PrivateKeyData`中
 
 > 当您在应用中使用 API 密钥时，请确保其在存储和传输期间均安全无虞。公开泄露凭据可能会导致您的帐号遭盗用，这可能会使您的帐号产生预料之外的费用。为帮助确保 API 密钥的安全，请遵循以下最佳做法：

@@ -43,13 +43,13 @@ services:
 
 在这个Yaml中，我们可以看到，这里有一个项目是`Projectname`，这个项目依赖了组件`stest`，在项目执行`deploy`方法（这个方法是`stest`组件自己定义的）之前，要执行一个叫做`stest_plugin`的组件。其组件和插件以及Yaml等关系如下：
 
-![](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-2.jpg)
+![](https://images.devsapp.cn/s-tool/zh/component-application-plugin-2.jpg)
 
 换一种说法就是，一个Yaml，可以部署多个项目，每个项目对应了一个组件，这个组件来完成每个项目的部署。但是有一些组件在某些情况下没办法更好地完成一个任务，所以这个时候就需要插件/Hook了。例如，当我们部署一个静态网站项目，我们可以把这个静态网站项目通过`Website`组件部署到线上，但是如果这个项目是一个Vue的项目，我们在部署之前可能要`npm build`一下，这个时候我们就可以在`Website`组件之上，增加一个插件，在部署执行，先执行这个部分。这种做法实际上在我们工程化一个项目或者CICD流程中，将会有比较有趣的作用。
 
 那么，什么是应用呢？其实一个应用的定义就比较广泛了，你可以认为所谓的一个应用是一个Yaml，这个应用中包括Yaml所附带的代码，包括资源描述文件(Yaml文件)等。一般情况下是这样的：
 
-![](https://images.serverlessfans.com/s-tool/zh/component-application-plugin-3.jpg)
+![](https://images.devsapp.cn/s-tool/zh/component-application-plugin-3.jpg)
 
 我们可以认为一个应用可以是一个`hello_world`的案例，一个音视频处理的案例，部署一个在线转码的能力，部署一个......
 

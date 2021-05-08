@@ -4,7 +4,7 @@
 获取密钥页面：https://console.cloud.tencent.com/cam/capi
 
 - 打开 [获取密钥页面](https://console.cloud.tencent.com/cam/capi) 获取密钥 ：
-  ![获取密钥页面](https://images.serverlessfans.com/access/tencent-access.jpg)
+  ![获取密钥页面](https://images.devsapp.cn/access/tencent-access.jpg)
 
 
 > 使用主账号密钥可以无限制地访问您的腾讯云资源，主账号密钥泄露可能造成您的云上资产损失！强烈建议您参照 [最佳实践](https://cloud.tencent.com/document/product/598/10592) 停止使用主账号登录控制台或者使用主账号密钥访问云API，请使用子账号进行相关资源操作。 [如何创建子用户](https://cloud.tencent.com/document/product/598/13674)

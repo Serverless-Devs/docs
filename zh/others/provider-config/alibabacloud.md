@@ -5,10 +5,10 @@ AccountId获取页面：https://account.console.aliyun.com/#/secure
 获取密钥页面：https://usercenter.console.aliyun.com/#/manage/ak
 
 - 打开 [AccountId获取页面](https://account.console.aliyun.com/#/secure) 获取AccountId ：
-  ![AccountId获取页面](https://images.serverlessfans.com/access/aliyun-accountid.jpg)
+  ![AccountId获取页面](https://images.devsapp.cn/access/aliyun-accountid.jpg)
 
 - 打开 [获取密钥页面](https://usercenter.console.aliyun.com/#/manage/ak) 获取密钥信息 ：
-  ![获取密钥页面](https://images.serverlessfans.com/access/aliyun-access.jpg)
+  ![获取密钥页面](https://images.devsapp.cn/access/aliyun-access.jpg)
  
   
 > 云账号 AccessKey 是您访问阿里云 API 的密钥，具有该账户完全的权限，请您务必妥善保管！不要通过任何方式（e.g. Github）将 AccessKey 公开到外部渠道，以避免被他人利用而造成 [安全威胁](https://help.aliyun.com/knowledge_detail/54059.html?spm=5176.2020520153.0.0.57f1336a8PQ1KR) 。    
