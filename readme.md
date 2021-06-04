@@ -4,7 +4,7 @@
 
 <p align="center">
   <span>Use Serverless like a mobile phone</span><br>
-  <span> <a href="./zh/readme.md">中文文档</a> ｜English </span>
+  <span> <a href="./readme_zh.md">中文文档</a> ｜English </span>
 </p>
 
 ## Project introduction
