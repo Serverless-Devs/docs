@@ -4,7 +4,7 @@
 
 <p align="center">
   <span>像使用手机一样使用Serverless</span><br>
-  <span>中文文档 ｜<a href="./zh/readme.md">English</a> </span>
+  <span>中文文档 ｜<a href="./readme.md">English</a> </span>
 </p>
 
 ## 项目简介
