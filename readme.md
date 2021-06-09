@@ -33,11 +33,11 @@ Serverless Devs can describe resources in Alibaba Cloud services such as Functio
 
 ## Help documentation
 
-- [Installation](./zh/install.md)
-- [Command Instruction](./zh/command.md)
-- [Yaml Specification](./zh/yaml.md)
-- [Package Dev](./zh/dev.md)
-- [Registry](./zh/registry.md)
+- [Installation](./en/install.md)
+- [Command Instruction](./en/command.md)
+- [Yaml Specification](./en/yaml.md)
+- [Package Dev](./en/dev.md)
+- [Registry](./en/registry.md)
 
 ## References
 
