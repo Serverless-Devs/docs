@@ -19,7 +19,7 @@ services:
     component: vue-component  # The component name.
     props: # The property values of the component.
       src: ./frontend_src
-      url: ${backend.output.url}
+      url: url
     actions: # The custom execution logic.
       pre-deploy: # Executed before deploy is run.
         - run: s exec -- publish  # The command lines to be executed.
@@ -39,7 +39,7 @@ services:
     component: express
     props:
       app: ./express-blog
-      url: ${domain}
+      url: ${vars.domain}
     actions:
       pre-deploy:
         - run: npm run build
