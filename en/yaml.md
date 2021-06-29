@@ -52,13 +52,13 @@ services:
         - route: /~assets
           value: ${assets.outPut.url}
         - route: /
-          value: ${nextjs-portal.outPut.url}
+          value: ${nextjs-portal.output.url}
           index: index.html
         - route: /~portal
-          value: ${nextjs-portal.outPut.url}
+          value: ${nextjs-portal.output.url}
           inex: index.html
         - route: /~blog
-          value: ${express-blog.outPut.url}
+          value: ${express-blog.output.url}
 ```
 
 
