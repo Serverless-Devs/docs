@@ -16,6 +16,7 @@ $ yarn global add @serverless-devs/s
 
 
 > **Notes**:
+> - If the "could not find command" error message appears when you run the preceding command in a Linux or macOS system, run the `ln -s THE PATH OF SERVERLESS-DEVS /usr/bin` command to resolve the error.  
 > - If the "Error EACCES: permission denied" error message appears when you run the preceding command in a Linux or macOS system, run the sudo npm install @serverless-devs/s -g command to resolve the error.
 > - If the installation takes a long period of time, you can run the following command to use the Taobao npm repository: npm --registry=https://registry.npm.taobao.org install @serverless-devs/s -g.
 
