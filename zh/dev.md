@@ -96,15 +96,13 @@ Description:
   en: English
 HomePage: 项目首页地址
 Tags: #标签详情
-  - zh: 部署函数
-    en: English
+  - 部署函数
 Category: 分类 # 基础云服务/Web框架/Web应用/人工智能/音视频处理/图文处理/监控告警/大数据/IoT/新手入门/其他
 Service: # 使用的服务
   - Name: 服务名 # 函数计算/容器服务/镜像服务/消息队列/工作流/CDN/对象存储/表格存储/MNS/日志服务/API网关/数据库/解析服务/云应用/其他
     # Runtime: Python 3.6 如果服务是函数，还需要增加Runtime
     Authorities: #权限权限
-      - zh: 创建函数 # 所需要的权限
-        en: English
+      - 创建函数 # 所需要的权限
 ```
 
 部分参数取值范围：
